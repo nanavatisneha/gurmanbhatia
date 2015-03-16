@@ -1,0 +1,168 @@
+*{
+	  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          margin: 0;
+          
+
+}
+
+.social-t{
+    margin-left: 20px;
+    display: inline-block;
+     background: url(http://gurmanbhatia.com/wp-content/uploads/2015/02/social_twitter.png);
+    background-position: 0px -30px;
+    width: 30px;
+    height: 30px;
+}
+
+.social-t:hover{
+    margin-left: 20px;
+     display: inline-block;
+     background: url(http://gurmanbhatia.com/wp-content/uploads/2015/02/social_twitter.png);
+    background-position: 0px 0;
+    width: 30px;
+    height: 30px;
+}
+
+.social-l{
+    margin-left: 20px;
+    display: inline-block;
+     background: url(http://gurmanbhatia.com/wp-content/uploads/2015/02/social_linkedin.png);
+    background-position: 0px -30px;
+    width: 30px;
+    height: 30px;
+}
+
+.social-l:hover{
+    margin-left: 20px;
+     display: inline-block;
+     background: url(http://gurmanbhatia.com/wp-content/uploads/2015/02/social_linkedin.png);
+    background-position: 0px 0px;
+    width: 30px;
+    height: 30px;
+}
+
+.social-g:hover{
+    margin-left: 20px;
+    display: inline-block;
+     background: url(http://gurmanbhatia.com/wp-content/uploads/2015/02/social_git-copy.png)    ;
+    background-position: 0px -30px;
+    width: 30px;
+    height: 30px;
+}
+
+.social-g{
+    margin-left: 20px;
+     display: inline-block;
+     background: url(http://gurmanbhatia.com/wp-content/uploads/2015/02/social_git-copy.png);
+    background-position: 0px 0;
+    width: 30px;
+    height: 30px;
+}
+.ss{
+    display: inline-block;
+}
+
+
+a:-webkit-any-link {
+	color: inherit;
+	text-decoration: inherit;
+	cursor: auto;
+}
+
+body{
+	background-color: white;
+}
+#nav {
+	width: 370px;
+	position: fixed;
+	background-color: #333332;
+	height: 110vh;
+	padding-top: 10%;
+	padding-left: 2%;
+	padding-right: 2%
+
+}
+
+#nav h1 {
+	font-family: 'roboto';
+	color: #fff ;
+	font-weight: 500;
+	font-size: 500%;
+	background-color: #333332;
+}
+
+#nav h2 {
+	font-family: 'roboto';
+	color: white ;
+	font-weight: 100;
+	font-size: 250%;
+	margin-top: 10px;
+	line-height: 130%;
+	background-color: #333332;
+}
+
+#content {
+	margin-left: 450px;
+	display: inline-block;
+	margin-right: 50px;
+
+}
+
+.segment p{
+	font-family: 'roboto';
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 40px;
+}
+
+.segment{
+	width: 65%;
+	margin-top: 5%;
+	margin-bottom: 35%;
+}
+
+.segment h2 {
+	font-family: 'roboto';
+	color: #646661 ;
+
+	font-weight: 300;
+	font-size: 4vh;
+	margin-bottom: 8px;
+}
+
+.para {
+	margin-top: 30px;
+}
+
+#menu .options {
+	font-family: 'roboto';
+	color: #fff ;
+	font-weight: 300;
+	font-size: 190%;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	background-color: #333332;
+	cursor: pointer;
+}
+
+#menu .options:hover {
+	font-family: 'roboto';
+	color: #7B8A89;
+	font-weight: 300;
+	font-size: 190%;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	background-color: #333332;
+	cursor: pointer;
+}
+
+#menu {
+	margin-top: 40%;
+	background-color: #333332;
+}
+
+.active{
+	color: #E5E581!important;
+}
