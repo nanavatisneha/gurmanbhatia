@@ -1,4 +1,4 @@
-    var buffer = 100;
+    var buffer = 90;
 
 //scroll to partcular section on the page
 $('#menu .options').on('click', function(){
@@ -10,6 +10,22 @@ $('#menu .options').on('click', function(){
     pos.top = pos.top - buffer;
     $('html, body').animate({scrollTop:(pos.top)}, 600);
 });
+
+$('.story-title h3').on('mouseover',function(){
+    var thing =  '#'+$(this).attr('data-which');
+    $(thing).addClass('image-active');
+});
+
+$('.story-title h3').on('mouseout',function(){
+    var thing =  '#'+$(this).attr('data-which');
+    $(thing).removeClass('image-active');
+});
+/*
+$('#click-more').on('click',function(){
+    $('.story-more').addClass('visible');
+});
+*/
+
 
 $(window).scroll(function() {
     var windscroll = $(window).scrollTop();
@@ -27,3 +43,4 @@ $(window).scroll(function() {
     }
 
 }).scroll();
+
