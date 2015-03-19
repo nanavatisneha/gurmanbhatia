@@ -113,59 +113,15 @@
     filter: grayscale(0%); 
 }
 
-.social-t{
-    margin-left: 20px;
-    display: inline-block;
-     background: url(../img/social_twitter.png);
-    background-position: 0px -30px;
-    width: 30px;
-    height: 30px;
+.social {
+	margin-left: 20px;
+	color: #B2B1B0;
 }
 
-.social-t:hover{
-    margin-left: 20px;
-     display: inline-block;
-     background: url(../img/social_twitter.png);
-    background-position: 0px 0;
-    width: 30px;
-    height: 30px;
+.social:hover {
+	color: #E5E581;
 }
 
-.social-l{
-    margin-left: 20px;
-    display: inline-block;
-     background: url(../img/social_linkedin.png);
-    background-position: 0px -30px;
-    width: 30px;
-    height: 30px;
-}
-
-.social-l:hover{
-    margin-left: 20px;
-     display: inline-block;
-     background: url(../img/social_linkedin.png);
-    background-position: 0px 0px;
-    width: 30px;
-    height: 30px;
-}
-
-.social-g:hover{
-    margin-left: 20px;
-    display: inline-block;
-     background: url(../img/social_git.png)    ;
-    background-position: 0px -30px;
-    width: 30px;
-    height: 30px;
-}
-
-.social-g{
-    margin-left: 20px;
-     display: inline-block;
-     background: url(../img/social_git.png);
-    background-position: 0px 0;
-    width: 30px;
-    height: 30px;
-}
 .ss{
     display: inline-block;
 }
@@ -224,7 +180,7 @@ body{
 
 #social-box{
 	padding-top: 15%;
-	margin-left: -6%;
+	margin-left: -5.5%;
 }
 #nav{
 	background-color: #333332;
