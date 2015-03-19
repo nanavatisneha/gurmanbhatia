@@ -120,6 +120,7 @@
 
 .social:hover {
 	color: #E5E581;
+	cursor: pointer;
 }
 
 .ss{
