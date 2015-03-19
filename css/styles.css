@@ -292,9 +292,7 @@ li{
 	line-height: 30px;
 	margin-bottom: 20px;
 }
-#contently{
-	margin-top: 10%;
-}
+
 #contently h3{
 	font-family: 'roboto';
 	font-size: 25px;
@@ -306,6 +304,7 @@ li{
 	-o-transition: all .2s linear;
 	transition: all .2s linear;
 	cursor: pointer;
+	margin-top: 10%;
 
 }
 
