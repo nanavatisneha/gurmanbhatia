@@ -255,6 +255,31 @@ li{
 
 }
 */
+footer #blog{
+	text-align: left!important;
+	font-family: 'roboto';
+	font-size: 20px;
+	font-weight: 300;
+	color: white;
+	margin-left: -30px;
+}
+
+footer #blog a:hover {
+	color: #D44636;
+	text-decoration: inherit;
+	cursor: pointer;
+}
+
+footer #blog a {
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+.whatre{
+	display: inline-block;
+}
 #resume {
 	font-family: 'roboto';
 	width: 90%;
@@ -278,7 +303,18 @@ li{
 	margin-bottom: 10px;
 	line-height: 30px;
 }
+footer {
+	height: 50px;
+	padding-left: 28%;
+	padding-top: 12px;
+	background-color: #B2B1B0;
+}
 
+footer h8{
+	margin-right: 30px;
+	margin-left: 30px;
+
+}
 #resume h5 {
 	font-weight: 400;
 	font-size: 18px;
