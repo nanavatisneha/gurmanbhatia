@@ -130,25 +130,23 @@
 a:-moz-any-link {
 	color: inherit;
 	text-decoration: inherit;
-	cursor: auto;
 }
 
 a:-webkit-any-link {
 	color: inherit;
 	text-decoration: inherit;
-	cursor: auto;
 }
 
 #contently a:-moz-any-link {
 	color: inherit;
 	text-decoration: underline;
-	cursor: auto;
+	cursor: pointer;
 }
 
 #contently a:-webkit-any-link {
 	color: inherit;
 	text-decoration: underline;
-	cursor: auto;
+	cursor: pointer;
 }
 
 #resume p a:-moz-any-link {
