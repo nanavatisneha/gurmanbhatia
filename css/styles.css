@@ -451,7 +451,7 @@ footer h8{
 	color: #E5E581!important;
 }
 
-@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px){
+@media all and (max-width: 768px){
 	#nav {
 		display: none;
 	}
