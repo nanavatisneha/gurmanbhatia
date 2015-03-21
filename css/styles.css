@@ -89,6 +89,13 @@
 	margin-bottom: 40px;
 }
 
+.video{
+	margin-top: 15px;
+	position: relative;
+	cursor: pointer;
+	width: 90%;
+}
+
 .story-image-block{
 	margin-top: 15px;
 	position: relative;
@@ -451,13 +458,14 @@ footer h8{
 	color: #E5E581!important;
 }
 
-@media all and (max-width: 768px){
+@media screen and (max-width: 600px){
 	#nav {
 		display: none;
 	}
 
 	#content{
 		margin-left: 20px;
+		margin-right: auto;
 	}
 
 	.segment {
@@ -465,7 +473,7 @@ footer h8{
 	}
 
 	#work .story-block .story-desc p{
-		width: 90%;
+		width: 100%;
 	}
 
 	#work .story-block .story-cat {
@@ -506,6 +514,10 @@ footer h8{
     -o-filter: grayscale(0%);
     -ms-filter: grayscale(0%);
     filter: grayscale(0%); 
+	}
+
+	.video{
+		display: none;
 	}
 }
 
