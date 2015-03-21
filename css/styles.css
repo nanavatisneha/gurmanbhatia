@@ -4,19 +4,21 @@
           box-sizing: border-box;
           margin: 0;
 }
+
 .story-title{
 	display: inline-block;
 	width: 70%;
 }
+
 .story-block{
-	margin-top: 40px;
+	margin-top: 2.5em;
 }
 
 .story-desc h6{
 	margin-top: 15px;
 	font-family: 'roboto';
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1.3em;
 	font-style: italic;
 }
 
@@ -57,9 +59,10 @@
 #work .story-block .story-cat{
 	width: 150px;
 	margin:0;
-	margin-left: 50px;
+	margin-left: 0;
 	display: inline-block;
 }
+
 #work .story-block .story-cat h1{
 	font-family: 'roboto';
 	font-weight: 300;
@@ -77,7 +80,6 @@
 	margin-top: 30px;
 	margin-bottom: 15px;
 	width: 75%;
-	
 }
 
 .story-image{
@@ -189,6 +191,10 @@ body{
 	position: fixed;
 	height: 110vh;
 	padding-top: 4%;
+		-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
 }
 
 
@@ -200,17 +206,18 @@ body{
 	background-color: #333332;
 }
 
-#column1{
-	display:inline-block; 
-	margin:0; 
-	width:28%;
-}
-
-#column2{
+#skills{
 	display:inline-block; 
 	margin-left:2.5%;
-	position: absolute;
-	width:45%;"
+	width:18%;
+		position: absolute;
+}
+
+#workex{
+	display:inline-block; 
+
+	width:70%;
+		margin:0; 
 }
 
 #nav h2 {
@@ -282,6 +289,7 @@ footer #blog{
 	font-weight: 300;
 	color: white;
 	margin-left: -30px;
+	display: block;
 }
 
 footer #blog a:hover {
@@ -300,6 +308,20 @@ footer #blog a {
 .whatre{
 	display: inline-block;
 }
+
+footer {
+	height: 50px;
+	padding-left: 28%;
+	padding-top: 12px;
+	background-color: #B2B1B0;
+}
+
+footer h8{
+	margin-right: 30px;
+	margin-left: 30px;
+
+}
+
 #resume {
 	font-family: 'roboto';
 	width: 90%;
@@ -323,18 +345,7 @@ footer #blog a {
 	margin-bottom: 10px;
 	line-height: 1.6em;
 }
-footer {
-	height: 50px;
-	padding-left: 28%;
-	padding-top: 12px;
-	background-color: #B2B1B0;
-}
 
-footer h8{
-	margin-right: 30px;
-	margin-left: 30px;
-
-}
 #resume h5 {
 	font-weight: 400;
 	font-size: 1.1em;
@@ -398,40 +409,29 @@ footer h8{
 	margin-bottom: 8px;
 }
 
-.para {
-	margin-top: 30px;
-}
 
 #menu .options {
 	font-family: 'roboto';
 	color: #fff ;
 	font-weight: 300;
-	font-size: 25px;;
-	margin-top: 13px;
-	margin-bottom: 13px;
-	background-color: #333332;
-	cursor: pointer;
+	font-size: 1.65em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 #menu .options-b {
 	font-family: 'roboto';
 	color: #fff ;
 	font-weight: 300;
-	font-size: 25px;;
-	margin-top: 13px;
-	margin-bottom: 13px;
-	background-color: #333332;
-	cursor: pointer;
+	font-size: 1.65em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 #menu .options-b:hover {
 	font-family: 'roboto';
 	color: #7B8A89;
 	font-weight: 300;
-	font-size: 25px;;
-	margin-top: 13px;
-	margin-bottom: 13px;
-	background-color: #333332;
 	cursor: pointer;
 }
 
@@ -439,10 +439,6 @@ footer h8{
 	font-family: 'roboto';
 	color: #7B8A89;
 	font-weight: 300;
-	font-size: 25px;;
-	margin-top: 13px;
-	margin-bottom: 13px;
-	background-color: #333332;
 	cursor: pointer;
 }
 
@@ -453,5 +449,55 @@ footer h8{
 
 .active{
 	color: #E5E581!important;
+}
+
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px){
+	#nav {
+		display: none;
+	}
+
+	#content{
+		margin-left: 20px;
+	}
+
+	.segment {
+		width: 90%;
+	}
+
+	#work .story-block .story-desc p{
+		width: 90%;
+	}
+
+	#work .story-block .story-cat {
+		margin-left: 0;
+	}
+
+	#resume {
+	font-family: 'roboto';
+	width: 100%;
+	}
+
+	#skills{
+	display:block; 
+	margin-left:0;
+	width:100%;
+	}
+
+	#workex{
+	display: block; 
+	width:100%;
+	}
+
+	.whatre{
+	display: block;
+	}
+
+	footer {
+	height: 50px;
+	padding-left: 2%;
+	width: 100%;
+	display: block; 
+	bottom: 0;
+	}
 }
 
