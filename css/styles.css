@@ -3,6 +3,7 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
           margin: 0;
+          font-family: 'roboto';
 }
 
 .story-title{
@@ -10,13 +11,46 @@
 	width: 70%;
 }
 
+#mobile-nav{
+	display: none;
+	background-color: #333332;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+#mobile-logo {
+	width: 85%;
+	display: inline-block;
+
+}
+#mobile-logo h1{
+	color: #fff ;
+	font-weight: 500;
+	font-size: 2em;
+	padding: 0.3em;
+}
+
+#mobile-logo h2{
+	color: #fff ;
+	font-weight: 300;
+	font-size: 1.3em;
+	padding-left: 0.5em;
+}
+
+#hamburger{
+	display: inline-block;
+	position: absolute;
+	color: #C7CCC7;
+	padding-top: 1.5em;
+	padding-left: 1.5em;
+	
+}
 .story-block{
 	margin-top: 2.5em;
 }
 
 .story-desc h6{
 	margin-top: 15px;
-	font-family: 'roboto';
 	font-weight: 500;
 	font-size: 1.3em;
 	font-style: italic;
@@ -31,7 +65,7 @@
 }
 
 .story-title h3{
-	font-family: 'roboto';
+	
 	font-weight: 500;
 	font-size: 2em;
 	margin-top: 10px;
@@ -49,7 +83,7 @@
 
 .story-source h4{
 	margin-top: 15px;
-	font-family: 'roboto';
+	
 	font-weight: 500;
 	font-size: 1.25em;
 	font-style: italic;
@@ -64,7 +98,7 @@
 }
 
 #work .story-block .story-cat h1{
-	font-family: 'roboto';
+	
 	font-weight: 300;
 	font-size: 1.5em;
 	margin-top: 10px;
@@ -73,7 +107,7 @@
 }
 
 #work .story-block .story-desc p{
-	font-family: 'roboto';
+	
 	font-size: 1.1em;
 	font-weight: 300;
 	line-height: 2em;
@@ -206,7 +240,6 @@ body{
 
 
 #nav h1 {
-	font-family: 'roboto';
 	color: #fff ;
 	font-weight: 500;
 	font-size: 500%;
@@ -228,7 +261,7 @@ body{
 }
 
 #nav h2 {
-	font-family: 'roboto';
+	
 	color: white ;
 	font-weight: 100;
 	font-size: 250%;
@@ -244,12 +277,16 @@ body{
 
 }
 
+#about #social-box{
+	display: none;
+}
+
 li{
 	list-style-type: none;
 }
 
 .segment p{
-	font-family: 'roboto';
+	
 	font-size: 1.1em;
 	font-weight: 300;
 	line-height: 2em;
@@ -270,7 +307,7 @@ li{
 */
 
 #content.error h1{
-	font-family: 'roboto';
+	
 	font-size: 30px;
 	font-weight: 500;
 	line-height: 40px;
@@ -289,48 +326,17 @@ li{
 	width: 100%;
 	z-index: -100;
 }
-footer #blog{
-	text-align: left!important;
-	font-family: 'roboto';
-	font-size: 20px;
-	font-weight: 300;
-	color: white;
-	margin-left: -30px;
+
+.show#menu{
 	display: block;
-}
-
-footer #blog a:hover {
-	color: #D44636;
-	text-decoration: inherit;
-	cursor: pointer;
-}
-
-footer #blog a {
 	-moz-transition: all .2s linear;
 	-webkit-transition: all .2s linear;
 	-o-transition: all .2s linear;
-	transition: all .2s linear;
 }
 
-.whatre{
-	display: inline-block;
-}
-
-footer {
-	height: 50px;
-	padding-left: 28%;
-	padding-top: 12px;
-	background-color: #B2B1B0;
-}
-
-footer h8{
-	margin-right: 30px;
-	margin-left: 30px;
-
-}
 
 #resume {
-	font-family: 'roboto';
+	
 	width: 90%;
 }
 
@@ -368,7 +374,7 @@ footer h8{
 }
 
 #contently h3{
-	font-family: 'roboto';
+	
 	font-size: 25px;
 	font-weight: 400;
 	line-height: 40px;
@@ -409,7 +415,6 @@ footer h8{
 }
 
 .segment h2 {
-	font-family: 'roboto';
 	color: #61A2AF;
 	font-weight: 300;
 	font-size: 2.8em;
@@ -418,7 +423,6 @@ footer h8{
 
 
 #menu .options {
-	font-family: 'roboto';
 	color: #fff ;
 	font-weight: 300;
 	font-size: 1.65em;
@@ -427,7 +431,6 @@ footer h8{
 }
 
 #menu .options-b {
-	font-family: 'roboto';
 	color: #fff ;
 	font-weight: 300;
 	font-size: 1.65em;
@@ -436,14 +439,12 @@ footer h8{
 }
 
 #menu .options-b:hover {
-	font-family: 'roboto';
 	color: #7B8A89;
 	font-weight: 300;
 	cursor: pointer;
 }
 
 #menu .options:hover {
-	font-family: 'roboto';
 	color: #7B8A89;
 	font-weight: 300;
 	cursor: pointer;
@@ -481,19 +482,20 @@ footer h8{
 	}
 
 	#resume {
-	font-family: 'roboto';
+	
 	width: 100%;
 	}
 
 	#skills{
 	display:block; 
 	margin-left:0;
-	width:100%;
+	width:95%;
+	position: relative;
 	}
 
 	#workex{
 	display: block; 
-	width:100%;
+	width:95%;
 	}
 
 	.whatre{
@@ -519,5 +521,62 @@ footer h8{
 	.video{
 		display: none;
 	}
+
+	.story-image{
+	width: 100	%;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	}
+
+	.story-image-block{
+		width: 100%;
+	}
+	#mobile-nav{
+	display: block;
+	}
+
+	#mobile-logo{
+		padding-bottom: 2%;
+	}
+
+	#about{
+		margin-top: 8em;
+	}
+
+	#menu {
+	margin-top: 0;
+	background-color: #333332;
+	padding-bottom: 2%;
+	position: absolute;
+	width: 100%;
+	vertical-align: top;
+	opacity: 0.9;
+	display: none;
+	}
+
+	.options{
+		padding-left: 0.5em;
+	}
+
+	.options-b{
+		padding-left: 0.5em;
+	}
+
+	#contently{
+		display: block;
+		position: relative;
+	}
+
+	#about #social-box{
+	display: block;
+	padding-top: 3%;
+	padding-left: 0.2em;
+	}
+
+	#about .social:hover{
+		color:#61A2AF
+	}
+
 }
 
