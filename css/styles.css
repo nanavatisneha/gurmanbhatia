@@ -456,7 +456,7 @@ li{
 	color: #E5E581!important;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px), screen and (max-height: 700px){
 	#nav {
 		display: none;
 	}
@@ -568,7 +568,7 @@ li{
 	#about #social-box{
 	display: block;
 	padding-top: 3%;
-	padding-left: 0.2em;
+	margin-left: -2.5%;
 	}
 
 	#about .social:hover{
