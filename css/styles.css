@@ -246,16 +246,15 @@ body{
 
 #skills{
 	display:inline-block; 
-	margin-left:2.5%;
-	width:18%;
-		position: absolute;
+	margin-left:5%;
+	width:23%;
 }
 
 #workex{
 	display:inline-block; 
-
-	width:70%;
-		margin:0; 
+	width:60%;
+	margin:0; 
+	vertical-align: top;
 }
 
 #nav h2 {
