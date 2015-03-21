@@ -44,9 +44,17 @@ $(window).scroll(function() {
 
 }).scroll();
 
+$('#menu .options').on('click', function(){
+if ($('#menu').hasClass('show')){
+        buffer = 120;  
+        $('#menu').removeClass('show');}
+    });
+
 $('#hamburger').on('click', function(){
     if ($('#menu').hasClass('show')){
         $('#menu').removeClass('show');    
-    }else
+    } else
     {$('#menu').addClass('show')};
 });
+
+
