@@ -31,7 +31,7 @@
 .story-title h3{
 	font-family: 'roboto';
 	font-weight: 500;
-	font-size: 35px;
+	font-size: 2em;
 	margin-top: 10px;
 	margin-bottom: 15px;
 	-moz-transition: all .2s linear;
@@ -49,7 +49,7 @@
 	margin-top: 15px;
 	font-family: 'roboto';
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1.25em;
 	font-style: italic;
 }
 
@@ -63,19 +63,19 @@
 #work .story-block .story-cat h1{
 	font-family: 'roboto';
 	font-weight: 300;
-	font-size: 25px;
+	font-size: 1.5em;
 	margin-top: 10px;
-	line-height: 45px;
+	line-height: 1.7em;
 	color: #61A2AF;
 }
 
 #work .story-block .story-desc p{
 	font-family: 'roboto';
+	font-size: 1.1em;
 	font-weight: 300;
-	font-size: 20px;
+	line-height: 2em;
 	margin-top: 30px;
 	margin-bottom: 15px;
-	line-height: 40px;
 	width: 75%;
 	
 }
@@ -183,8 +183,8 @@ body{
 }
 #nav{
 	background-color: #333332;
-	padding-left: 2%;
-	padding-right: 2%;
+	padding-left: 30px;
+	padding-right: 20px;
 		width: 370px;
 	position: fixed;
 	height: 110vh;
@@ -236,9 +236,9 @@ li{
 
 .segment p{
 	font-family: 'roboto';
-	font-size: 20px;
+	font-size: 1.1em;
 	font-weight: 300;
-	line-height: 40px;
+	line-height: 2em;
 }
 
 /* .story-more {
@@ -306,22 +306,22 @@ footer #blog a {
 }
 
 #resume li {
+	font-size: 1em;
 	font-weight: 300;
-	font-size: 17px;
-	line-height: 29px;
+	line-height: 1.8em;
 	margin-bottom: 20px;
 }
 #resume h3 {
 	font-weight: 500;
-	font-size: 28px;
+	font-size: 1.8em;
 	margin-bottom: 20px;
 }
 
 #resume h4 {
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 1.25em;
 	margin-bottom: 10px;
-	line-height: 30px;
+	line-height: 1.6em;
 }
 footer {
 	height: 50px;
@@ -337,15 +337,15 @@ footer h8{
 }
 #resume h5 {
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 1.1em;
 	margin-bottom: 10px;
 	font-style: italic;
 }
 
 #resume p {
+	font-size: 1em;
 	font-weight: 300;
-	font-size: 18px;
-	line-height: 30px;
+	line-height: 1.8em;
 	margin-bottom: 20px;
 }
 
@@ -394,7 +394,7 @@ footer h8{
 	font-family: 'roboto';
 	color: #61A2AF;
 	font-weight: 300;
-	font-size: 50px;
+	font-size: 2.8em;
 	margin-bottom: 8px;
 }
 
@@ -406,7 +406,29 @@ footer h8{
 	font-family: 'roboto';
 	color: #fff ;
 	font-weight: 300;
-	font-size: 190%;
+	font-size: 25px;;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	background-color: #333332;
+	cursor: pointer;
+}
+
+#menu .options-b {
+	font-family: 'roboto';
+	color: #fff ;
+	font-weight: 300;
+	font-size: 25px;;
+	margin-top: 13px;
+	margin-bottom: 13px;
+	background-color: #333332;
+	cursor: pointer;
+}
+
+#menu .options-b:hover {
+	font-family: 'roboto';
+	color: #7B8A89;
+	font-weight: 300;
+	font-size: 25px;;
 	margin-top: 13px;
 	margin-bottom: 13px;
 	background-color: #333332;
@@ -417,7 +439,7 @@ footer h8{
 	font-family: 'roboto';
 	color: #7B8A89;
 	font-weight: 300;
-	font-size: 190%;
+	font-size: 25px;;
 	margin-top: 13px;
 	margin-bottom: 13px;
 	background-color: #333332;
@@ -425,10 +447,11 @@ footer h8{
 }
 
 #menu {
-	margin-top: 36%;
+	margin-top: 25%;
 	background-color: #333332;
 }
 
 .active{
 	color: #E5E581!important;
 }
+
