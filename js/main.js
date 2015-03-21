@@ -4,6 +4,9 @@
 $('#menu .options').on('click', function(){
 	$('#menu .options').removeClass('active');
 	$(this).addClass('active');
+    if ($('#menu').hasClass('show')){
+        buffer = 10;  
+        $('#menu').removeClass('show');}
 	var space = $(this).attr('data-which');
     var l= '#'+space;
     var pos = $(l).offset();
@@ -43,12 +46,6 @@ $(window).scroll(function() {
     }
 
 }).scroll();
-
-$('#menu .options').on('click', function(){
-if ($('#menu').hasClass('show')){
-        buffer = 120;  
-        $('#menu').removeClass('show');}
-    });
 
 $('#hamburger').on('click', function(){
     if ($('#menu').hasClass('show')){

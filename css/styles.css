@@ -26,14 +26,14 @@
 #mobile-logo h1{
 	color: #fff ;
 	font-weight: 500;
-	font-size: 2em;
+	font-size: 1.5em;
 	padding: 0.3em;
 }
 
 #mobile-logo h2{
 	color: #fff ;
 	font-weight: 300;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	padding-left: 0.5em;
 }
 
@@ -41,8 +41,7 @@
 	display: inline-block;
 	position: absolute;
 	color: #C7CCC7;
-	padding-top: 1.5em;
-	padding-left: 1.5em;
+	padding-top: 2%;
 	
 }
 .story-block{
@@ -52,7 +51,7 @@
 .story-desc h6{
 	margin-top: 15px;
 	font-weight: 500;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	font-style: italic;
 }
 
@@ -67,7 +66,7 @@
 .story-title h3{
 	
 	font-weight: 500;
-	font-size: 2em;
+	font-size: 1.8em;
 	margin-top: 10px;
 	margin-bottom: 15px;
 	-moz-transition: all .2s linear;
@@ -83,9 +82,8 @@
 
 .story-source h4{
 	margin-top: 15px;
-	
 	font-weight: 500;
-	font-size: 1.25em;
+	font-size: 1.2em;
 	font-style: italic;
 }
 
@@ -348,20 +346,20 @@ li{
 }
 #resume h3 {
 	font-weight: 500;
-	font-size: 1.8em;
+	font-size: 1.4em;
 	margin-bottom: 20px;
 }
 
 #resume h4 {
 	font-weight: 400;
-	font-size: 1.25em;
+	font-size: 1.2em;
 	margin-bottom: 10px;
 	line-height: 1.6em;
 }
 
 #resume h5 {
 	font-weight: 400;
-	font-size: 1.1em;
+	font-size: 1.05em;
 	margin-bottom: 10px;
 	font-style: italic;
 }
@@ -393,7 +391,7 @@ li{
 	
 }
 #about{
-	margin-bottom: 35%;
+	margin-bottom: 38%;
 	margin-top: 8.5%;
 }
 
@@ -417,7 +415,7 @@ li{
 .segment h2 {
 	color: #61A2AF;
 	font-weight: 300;
-	font-size: 2.8em;
+	font-size: 2.3em;
 	margin-bottom: 8px;
 }
 
@@ -578,5 +576,17 @@ li{
 		color:#61A2AF
 	}
 
+	.story-title{
+		width: 100%;
+	}
+
+	#work .story-block .story-cat{
+		width: 100%;
+	}
+
+	#work .story-block .story-cat h1{
+	
+	font-weight: 300;
+	font-size: 1.3em;
 }
 
