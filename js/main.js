@@ -2,11 +2,10 @@
 
 //scroll to partcular section on the page
 $('#menu .options').on('click', function(){
-	$('#menu .options').removeClass('active');
-	$(this).addClass('active');
-    if ($('#menu').hasClass('show')){
+        if ($('#menu').hasClass('show')){
         buffer = 10;  
-        $('#menu').removeClass('show');}
+        $('#menu').removeClass('show');
+        }
 	var space = $(this).attr('data-which');
     var l= '#'+space;
     var pos = $(l).offset();
@@ -35,14 +34,18 @@ $(window).scroll(function() {
     if (windscroll >= 100) {
         $('#content .segment').each(function(i) {
             if ($(this).position().top <= windscroll + buffer	) {
-                $('.options.active').removeClass('active');
-                $('.options').eq(i).addClass('active');
+                $('.desktop .options.active').removeClass('active');
+                $('.desktop .options').eq(i).addClass('active');
+                $('.mobile .options.active').removeClass('active');
+                $('.mobile .options').eq(i).addClass('active');
             }
         });
 
     } else {
-        $('.options.active').removeClass('active');
-        $('.options:first').addClass('active');
+        $('.desktop .options.active').removeClass('active');
+        $('.desktop .options:first').addClass('active');
+        $('.mobile .options.active').removeClass('active');
+        $('.mobile .options').eq(i).addClass('active');
     }
 
 }).scroll();

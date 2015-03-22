@@ -316,13 +316,6 @@ li{
 	margin-top: 10%;
 }
 
-#error1 {
-	bottom: 0;
-	position: absolute;
-	right: 0;
-	width: 100%;
-	z-index: -100;
-}
 
 .show#menu{
 	display: block;
@@ -452,8 +445,12 @@ li{
 	background-color: #333332;
 }
 
-.active{
-	color: #E5E581!important;
+#menu .options.active{
+	color: #E5E581;
+}
+
+.mobile #menu .options.active{
+	color: #E5E581;
 }
 
 @media screen and (max-width: 650px), screen and (max-height: 700px){
@@ -587,5 +584,24 @@ li{
 	
 	font-weight: 300;
 	font-size: 1.3em;
+	}
+
+	#content.error h1{
+	font-size: 1.6em;
+	font-weight: 500;
+	line-height: 1.8em;
+	margin-bottom: 2%;
+	margin-top: 3em;
+	color: #61A2AF;
+	}
+
+	#content.error {
+	margin-top: 10%;
+	}
+
+	#content.error img{
+	width: 100%;
+	padding-right: 3%;
+	}
 }
 
