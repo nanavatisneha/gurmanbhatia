@@ -45,7 +45,7 @@ $(window).scroll(function() {
         $('.desktop .options.active').removeClass('active');
         $('.desktop .options:first').addClass('active');
         $('.mobile .options.active').removeClass('active');
-        $('.mobile .options').eq(i).addClass('active');
+        $('.mobile .options:first').addClass('active');
     }
 
 }).scroll();
