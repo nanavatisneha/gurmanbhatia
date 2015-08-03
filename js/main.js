@@ -3,6 +3,16 @@
     var storydata = [
 
         {
+            id: 'census',
+            link: 'http://www.poynter.org/news/mediawire/361641/interactive-find-out-how-diverse-the-newspaper-industry-is/',
+            title: 'Find out how diverse the newspaper industry is',
+            source: 'Poynter',
+            category: 'code + design',
+            desc: "After the ASNE released their annual newsroom census on 27th July, I used the data released to create this interactive that highlights the lack of minorities in the industry. The idea is to make an engaging space where people could pick and choose the statistic they wanted to see. <em><b>Tools: JavaScript, Illustrator, HTML/CSS</em></b>",
+            img: 'census.png'
+        },
+
+        {
             id: 'netneutrality',
             link: 'https://gurmanbh.github.io/netneutrality-india',
             title: 'What choices are you making when you buy mobile Internet in India?',
@@ -52,6 +62,8 @@
             desc: "Before Citi Bike launched in 2013, the Department of Transportation (DOT) released a suggestion portal, where people could suggest future Citi Bike station locations. I scraped the data collected by the online portal and analyzed it to understand where these requests were coming from and whether the demand followed up with supply. <em><b>Tools: R, Python</em></b>",
             img: 'citibike.png'
         }
+
+
     ]
 
     var template_Html = $('#storytemplate').html();
