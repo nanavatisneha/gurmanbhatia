@@ -4,11 +4,17 @@
           box-sizing: border-box;
           margin: 0;
           font-family: 'roboto';
+          font-size: 0.985em;
 }
 
 .story-title{
 	display: inline-block;
 	width: 70%;
+}
+
+#resume p.highlight, #work p.highlight{
+	font-size: 1.2em;
+	font-style: italic
 }
 
 #mobile-nav{
@@ -17,6 +23,11 @@
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	padding-left: 0.4em;
+
+
 }
 #mobile-logo {
 	width: 85%;
@@ -89,14 +100,14 @@
 
 
 #work .story-block .story-cat{
-	width: 150px;
+	width: 180px;
 	margin:0;
-	margin-left: 0;
+	
 	display: inline-block;
 }
 
 #work .story-block .story-cat h1{
-	
+	margin-left: 30px;
 	font-weight: 300;
 	font-size: 1.5em;
 	margin-top: 10px;
@@ -111,7 +122,7 @@
 	line-height: 2em;
 	margin-top: 30px;
 	margin-bottom: 15px;
-	width: 75%;
+	width: 70%;
 }
 
 .story-image{
@@ -125,7 +136,7 @@
 	margin-top: 15px;
 	position: relative;
 	cursor: pointer;
-	width: 90%;
+	width: 80%;
 }
 
 .story-image-block{
@@ -178,37 +189,13 @@ a:-webkit-any-link {
 	text-decoration: inherit;
 }
 
-#contently a:-moz-any-link {
-	color: inherit;
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-#contently a:-webkit-any-link {
-	color: inherit;
-	text-decoration: underline;
-	cursor: pointer;
-}
-
-#resume p a:-moz-any-link {
+#resume p a:-moz-any-link, #about p a:-moz-any-link , #work p a:-moz-any-link {
 	color: #D44636;
 	text-decoration: inherit;
 	cursor: pointer;
 }
 
-#resume p a:-webkit-any-link {
-	color: #D44636;
-	text-decoration: inherit;
-	cursor: pointer;
-}
-
-#about p a:-moz-any-link {
-	color: #D44636;
-	text-decoration: inherit;
-	cursor: pointer;
-}
-
-#about p a:-webkit-any-link {
+#resume p a:-webkit-any-link, #about p a:-webkit-any-link , #work p a:-webkit-any-link {
 	color: #D44636;
 	text-decoration: inherit;
 	cursor: pointer;
@@ -245,14 +232,14 @@ body{
 }
 
 #skills{
-	display:inline-block; 
-	margin-left:5%;
-	width:23%;
+	/*display:inline-block; */
+	/*margin-left:5%;*/
+	/*width:23%;*/
 }
 
 #workex{
-	display:inline-block; 
-	width:60%;
+	/*display:inline-block; */
+	/*width:65%;*/
 	margin:0; 
 	vertical-align: top;
 }
@@ -327,7 +314,7 @@ li{
 
 #resume {
 	
-	width: 90%;
+	width: 70%;
 }
 
 #resume li {
@@ -340,6 +327,12 @@ li{
 	font-weight: 500;
 	font-size: 1.4em;
 	margin-bottom: 20px;
+	/*background-color: #B2B1B0;*/
+	color: #333332;
+	width: 150px;
+	padding: 8px;
+	border-width: 2px;
+	border-style: solid
 }
 
 #resume h4 {
@@ -451,6 +444,10 @@ li{
 }
 
 @media screen and (max-width: 650px), screen and (max-height: 700px){
+	*{
+		font-size: 0.992em;
+	}
+
 	#nav {
 		display: none;
 	}
@@ -578,6 +575,7 @@ li{
 	}
 
 	#work .story-block .story-cat h1{
+	margin-left: 0;
 	
 	font-weight: 300;
 	font-size: 1.3em;
