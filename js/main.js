@@ -56,7 +56,7 @@
         {
             id: 'citibike',
             link: 'http://thebrooklynink.com/2014/11/19/54191-city-bikes-brooklyn-wants-more/',
-            title: 'City Bikes? Brooklyn Wants More',
+            title: 'Citi Bikes? Brooklyn Wants More',
             source: 'The Brooklyn Ink and Columbia Journalist',
             category: 'words + code + data',
             desc: "Before Citi Bike launched in 2013, the Department of Transportation (DOT) released a suggestion portal, where people could suggest future Citi Bike station locations. I scraped the data collected by the online portal and analyzed it to understand where these requests were coming from and whether the demand followed up with supply. <em><b>Tools: R, Python</em></b>",
