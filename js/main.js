@@ -51,16 +51,20 @@
             category: 'words + data + mapping',
             desc: "Two maps that show broadband access in New York City at present and the vision of the city's upcoming Municipal Wi-Fi project. <em><b>Tools: CartoDB, R</em></b>",
             img: 'wifi.png'
-        },
+        }
 
-        {
-            id: 'citibike',
-            link: 'http://thebrooklynink.com/2014/11/19/54191-city-bikes-brooklyn-wants-more/',
-            title: 'Citi Bikes? Brooklyn Wants More',
-            source: 'The Brooklyn Ink and Columbia Journalist',
-            category: 'words + code + data',
-            desc: "Before Citi Bike launched in 2013, the Department of Transportation (DOT) released a suggestion portal, where people could suggest future Citi Bike station locations. I scraped the data collected by the online portal and analyzed it to understand where these requests were coming from and whether the demand followed up with supply. <em><b>Tools: R, Python</em></b>",
-            img: 'citibike.png'
+    ]
+
+    var playdata = [
+
+         {
+            id: 'notable',
+            link: 'https://gurmanbh.github.io/notable/',
+            title: 'Notable',
+            source: 'Personal project',
+            category: 'tool',
+            desc: "Notable is a prototype for inline annotation powered by Google Spreadsheets. As an example, I <a href='http://gurmanbhatia.com/notable/notable-resume.html' target = '_blank'>annotated my CV using Notable.</a> The project is still under development and the code can be found on <a href = 'http://github.com/gurmanbh/notable' target='_blank'>Github.</a>",
+            img: 'notable.png'
         }
 
 
@@ -71,6 +75,10 @@
 
     storydata.forEach(function(obj){
         $('#work-para').append(template_TF(obj))
+    })
+
+    playdata.forEach(function(obj){
+        $('#play-para').append(template_TF(obj))
     })
 
     var buffer = 90;
