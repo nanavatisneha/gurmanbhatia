@@ -52,6 +52,16 @@
             img: 'notable.png',
             "filterlist":"Highlights/Tools"
         },
+        {
+            id: 'tiktok',
+            link: 'http://www.poynter.org/news/mediawire/371490/tragic-images-of-children-captured-by-photojournalists-over-time/',
+            title: 'Tragic images of children captured by photojournalists over time',
+            source: 'Poynter',
+            category: 'code + design + images',
+            desc: "A modified version of WNYC's Tik-Tok with custom functions to blur images using CSS.",
+            img: 'tiktok.png',
+            "filterlist":"Interactives"
+        },
 
         {
             id: 'netneutrality',
