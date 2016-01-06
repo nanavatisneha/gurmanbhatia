@@ -58,7 +58,7 @@
             title: 'Tragic images of children captured by photojournalists over time',
             source: 'Poynter',
             category: 'code + design + images',
-            desc: "A modified version of WNYC's Tik-Tok with custom functions to blur images using CSS.",
+            desc: "Due to the sensitive nature of the visuals, I added custom functionalities to <a href='https://github.com/datanews/tik-tok' target='_blank'>WNYC's Tik-Tok</a> to blur images using CSS.",
             img: 'tiktok.png',
             "filterlist":"Interactives"
         },
