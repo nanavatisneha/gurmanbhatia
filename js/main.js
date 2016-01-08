@@ -6,11 +6,11 @@
             id: 'baseball',
             link: 'http://www.mypalmbeachpost.com/mark-foley-helps-save-astros-nationals-spring-training-baseball-in-west-palm-beach/',
             title: 'Spring training hardball: How a disgraced politician helped save the game',
-            "source": 'The Palm Beach Post',
-            "category": 'design',
-            "desc": "For a story about the behind the scenes of a spring training stadium in Palm Beach County, I made baseball cards for the characters involved.<em><b>Tools: Photoshop, JavaScript, HTML/CSS</em></b>",
-            "img": 'baseball.png',
-            "filterlist":'Interactives/Highlights'
+            source: 'The Palm Beach Post',
+            category: 'design',
+            desc: "For a story about the behind the scenes of a spring training stadium in Palm Beach County, I made baseball cards for the characters involved.<em><b>Tools: Photoshop, JavaScript, HTML/CSS</em></b>",
+            img: 'baseball.png',
+            filterlist:'Interactives/Highlights'
         },
         {
             id:'vr',
@@ -40,7 +40,7 @@
             category: 'code + design',
             desc: "After the ASNE released their annual newsroom census on 27th July, I used the data released to create this interactive that highlights the lack of minorities in the industry.<em><b>Tools: JavaScript, Illustrator, HTML/CSS</em></b>",
             img: 'census.png',
-            "filterlist":'Interactives/Highlights/Data'
+            filterlist:'Interactives/Highlights/Data'
         },
         {
             id: 'notable',
@@ -50,7 +50,7 @@
             category: 'tool',
             desc: "Notable is a prototype for inline annotation powered by Google Spreadsheets. As an example, I <a href='http://gurmanbhatia.com/notable/notable-resume.html' target = '_blank'>annotated my CV using Notable.</a> The project is still under development and the code can be found on <a href = 'http://github.com/gurmanbh/notable' target='_blank'>Github.</a>",
             img: 'notable.png',
-            "filterlist":"Highlights/Tools"
+            filterlist:"Highlights/Tools"
         },
         {
             id: 'tiktok',
@@ -60,7 +60,7 @@
             category: 'code + design + images',
             desc: "Due to the sensitive nature of the visuals, I added custom functionalities to <a href='https://github.com/datanews/tik-tok' target='_blank'>WNYC's Tik-Tok</a> to blur images using CSS.",
             img: 'tiktok.png',
-            "filterlist":"Interactives"
+            filterlist:"Interactives"
         },
 
         {
@@ -71,7 +71,7 @@
             category: 'words + code + design',
             desc: "India is the second biggest mobile phone market in the world and nearly 90 percent of the 20 percent of population has access to the Internet, accesses it through mobile. In light of the Net Neutrality debate, this news app helps you compare regular Internet plans with Facebook and WhatsApp only packs that are offered by certain telecom providers.<em><b>Tools: HTML/CSS, JavaScript (d3 + jQueryUI + Underscore.)</em></b>",
             img: 'nn.png',
-            "filterlist":"Interactives/Highlights/Data"
+            filterlist:"Interactives/Highlights/Data"
         },
 
         {
@@ -82,7 +82,7 @@
             category: 'words + code + design',
             desc: "Presented in a combination of snaps and text, this story uses Snapchat's aesthetics and interface to traces the journey of the brand towards a revenue based model.<em><b>Tools: HTML/CSS, JavaScript, PhotoShop</em></b>",
             img: 'snapchat-inside.png',
-            "filterlist":"Interactives/Highlights"
+            filterlist:"Interactives/Highlights"
         },
 
         {
@@ -93,7 +93,7 @@
             category: 'words + data',
             desc: "There are 29 Bangladeshi restaurants in New York City. By contrast, there are 318 Indian restaurants. This story captures the rise of the Bangladeshi pride in the city’s restaurant industry.<em><b>Tools: MS Excel</em></b>",
             img: 'neerob.png',
-            "filterlist":"Data/Highlights/Writing"
+            filterlist:"Data/Highlights/Writing"
         },
         {
             id: 'wifi',
@@ -103,7 +103,7 @@
             category: 'words + data + mapping',
             desc: "Two maps that show broadband access in New York City at present and the vision of the city's upcoming Municipal Wi-Fi project. <em><b>Tools: CartoDB, R</em></b>",
             img: 'wifi.png',
-            "filterlist":"Data/Writing"
+            filterlist:"Data/Writing"
         },
 
         {
@@ -118,7 +118,7 @@
         },
         {
             "id":'kathputli',
-            "link":'http://lsrcollegejournalism.org/documentary-production/',
+            "link":'https://www.youtube.com/watch?v=H1UBUmHpytU',
             "title":'Lost in Transition: Mapping the displacement in Kathputli Colony',
             "source":'Documentary Project: Lady Shri Ram College for Women',
             "category":'video',
