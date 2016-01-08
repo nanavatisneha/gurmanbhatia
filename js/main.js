@@ -40,7 +40,7 @@
             category: 'code + design',
             desc: "After the ASNE released their annual newsroom census on 27th July, I used the data released to create this interactive that highlights the lack of minorities in the industry.<em><b>Tools: JavaScript, Illustrator, HTML/CSS</em></b>",
             img: 'census.png',
-            "filterlist":'Interactives/Highlights'
+            "filterlist":'Interactives/Highlights/Data'
         },
         {
             id: 'notable',
