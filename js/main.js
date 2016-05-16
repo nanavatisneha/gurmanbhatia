@@ -3,6 +3,26 @@
 
     var storydata = [
     {
+            "id":'soberhome',
+            "link":'http://www.mypalmbeachpost.com/news/news/heres-a-little-known-way-cities-can-keep-tabs-on-s/nrDMs/',
+            "title":'Here’s a little-known way cities can keep tabs on sober homes',
+            "source":'The Palm Beach Post',
+            "category":'words',
+            "img": 'soberhome.jpg',
+            "desc":'Palm Beach County is home to hundreds of sober homes, most of which are not regulated. While cities say that they can\'t take strong actions because of the Americans with Disabilities Act, I used public records and extensive reporting to highlight one tool that they fail to use.',
+            "filterlist":"Writing/Highlights"
+        },
+    {
+            "id":'kyc',
+            "link":'http://apps.mypalmbeachpost.com/kyc/',
+            "title":'Know your candidates',
+            "source":'The Palm Beach Post',
+            "category":'code + design',
+            "img": 'kyc.png',
+            "desc":'Developed and designed Tarbell-based site for Palm Beach County\'s 2016 municipal elections. <em><b>Tools: Python, Flask, HTML/CSS/JavaScript.</em></b>',
+            "filterlist":"Interactives/Highlights/Data"
+        },
+    {
             id: 'baseball',
             link: 'http://www.mypalmbeachpost.com/mark-foley-helps-save-astros-nationals-spring-training-baseball-in-west-palm-beach/',
             title: 'Spring training hardball: How a disgraced politician helped save the game',
@@ -11,6 +31,26 @@
             desc: "For a story about the behind the scenes of a spring training stadium in Palm Beach County, I made baseball cards for the characters involved.<em><b>Tools: Photoshop, JavaScript, HTML/CSS</em></b>",
             img: 'baseball.png',
             filterlist:'Interactives/Highlights'
+        },
+        {
+            "id":'sports-college',
+            "link":'http://www.mypalmbeachpost.com/sports/football-recruiting',
+            "title":'Recruiting Central',
+            "source":'The Palm Beach Post',
+            "category":'code + design',
+            "desc":'Built a front-end layout integrated with Google Spreadsheets within a day to enable our Sports team to make quick and easy live updates to recruitment data for college football teams. With CSS ➡ Table on desktop / cards on mobile. <em><b>Tools: JavaScript, Underscore.js, Tabletop.js, HTML/CSS</em></b>',
+            "img":'football.png',
+            "filterlist":"Interactives"
+        },
+        {
+            "id":'guardianships',
+            "link":'http://www.mypalmbeachpost.com/guardianships-colin-savitt/',
+            "title":'Guardianships - A Broken Trust',
+            "source":'The Palm Beach Post',
+            "category":'code + design',
+            "desc":'Led the design and development for the investigative package within the confines of the CMS. Used <a href = "https://gurmanbh.github.io/notable/" target = "_blank">notable</a> (a custom built tool) to add hover elements for key players in the story. <em><b>Tools: JavaScript, HTML/CSS, Photoshop</em></b>',
+            "img":'guardianships.jpg',
+            "filterlist":"Interactives"
         },
         {
             id:'vr',
@@ -50,7 +90,7 @@
             category: 'tool',
             desc: "Notable is a prototype for inline annotation powered by Google Spreadsheets. As an example, I <a href='http://gurmanbhatia.com/notable/notable-resume.html' target = '_blank'>annotated my CV using Notable.</a> The project is still under development and the code can be found on <a href = 'http://github.com/gurmanbh/notable' target='_blank'>Github.</a>",
             img: 'notable.png',
-            filterlist:"Highlights/Tools"
+            filterlist:"Tools"
         },
         {
             id: 'tiktok',
@@ -91,7 +131,7 @@
             title: 'Now on the Menu: Bangladeshi Pride',
             source: 'The Columbia Journalist',
             category: 'words + data',
-            desc: "There are 29 Bangladeshi restaurants in New York City. By contrast, there are 318 Indian restaurants. This story captures the rise of the Bangladeshi pride in the city’s restaurant industry.<em><b>Tools: MS Excel</em></b>",
+            desc: "There are 29 Bangladeshi restaurants in New York City. By contrast, there are 318 Indian restaurants. This story captures the rise of the Bangladeshi pride in the city’s restaurant industry. <em><b>Tools: MS Excel</em></b>",
             img: 'neerob.png',
             filterlist:"Data/Highlights/Writing"
         },
@@ -137,10 +177,10 @@
     var buffer = 90;
 
     //scroll to partcular section on the page
-    $('#menu .options').on('click', function(){
-            if ($('#menu').hasClass('show')){
+    $('.menu .options').on('click', function(){
+            if ($('.menu').hasClass('show')){
             buffer = 10;  
-            $('#menu').removeClass('show');
+            $('.menu').removeClass('show');
             }
     	var space = $(this).attr('data-which');
         var l= '#'+space;
@@ -171,10 +211,10 @@
     }).scroll();
 
     $('#hamburger').on('click', function(){
-        if ($('#menu').hasClass('show')){
-            $('#menu').removeClass('show');    
+        if ($('#mobilemenu').hasClass('show')){
+            $('#mobilemenu').removeClass('show');    
         } else
-        {$('#menu').addClass('show')};
+        {$('#mobilemenu').addClass('show')};
     });
 
     storydata.forEach(function(e){

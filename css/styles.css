@@ -192,6 +192,11 @@ p a:hover{
 	color: #C7CCC7;
 	padding-top: 2%;
 	right: 1.5em;
+	cursor: pointer;
+}
+
+#hamburger:hover{
+	color: #E5E581;
 }
 
 /*nav bar desktop*/
@@ -237,7 +242,7 @@ li{
 	list-style-type: none;
 }
 
-#menu .options {
+.menu .options {
 	color: #fff ;
 	font-weight: 300;
 	font-size: 1.65em;
@@ -246,7 +251,7 @@ li{
 	line-height: 0.8em;
 }
 
-#menu .options-b {
+.menu .options-b {
 	color: #fff ;
 	font-weight: 300;
 	font-size: 1.65em;
@@ -255,13 +260,13 @@ li{
 		line-height: 0.8em;
 }
 
-#menu .options-b:hover {
+.menu .options-b:hover {
 	color: #7B8A89;
 	font-weight: 300;
 	cursor: pointer;
 }
 
-#menu .options:hover {
+.menu .options:hover {
 	color: #7B8A89;
 	font-weight: 300;
 	cursor: pointer;
@@ -277,17 +282,20 @@ li{
 	cursor: pointer;
 }
 
-#menu {
+.menu {
 	background-color: #333332;
 	position: absolute;
-    bottom: 8em;
 }
 
-#menu .options.active{
+#desktopmenu{
+	bottom: 8em;
+}
+
+.menu .options.active{
 	color: #E5E581;
 }
 
-.mobile #menu .options.active{
+.mobile .menu .options.active{
 	color: #E5E581;
 }
 
@@ -339,7 +347,7 @@ p a:-webkit-any-link:hover {
 	font-size: 1em;
 	font-weight: 300;
 	line-height: 1.8em;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 }
 
 #resume h3 {
@@ -379,13 +387,20 @@ p a:-webkit-any-link:hover {
 	vertical-align: top;
 }
 
-others
+/*others*/
 
-.show#menu{
+.show#mobilemenu{
 	display: block;
+	position: absolute;
+	bottom: none;
+	width: 100%;
 	-moz-transition: all .2s linear;
 	-webkit-transition: all .2s linear;
 	-o-transition: all .2s linear;
+}
+
+#mobilemenu{
+	display: none;
 }
 
 .ss{
@@ -532,7 +547,7 @@ others
 		padding-top: 8em;
 	}
 
-	#menu {
+	.menu {
 		margin-top: 0;
 		background-color: #333332;
 		padding-bottom: 2%;
@@ -540,6 +555,9 @@ others
 		width: 100%;
 		vertical-align: top;
 		opacity: 0.9;
+	}
+
+	#desktopmenu{
 		display: none;
 	}
 
@@ -636,13 +654,13 @@ others
 		padding-top: 1em;
 	}
 
-	#menu .options {
+	.menu .options {
 		font-size: 1.8em;
 		margin-top: 0.8em;
     	margin-bottom: 0.8em;
 	}
 
-	#menu .options-b{
+	.menu .options-b{
 		font-size: 1.8em;
 		margin-top: 0.8em;
     	margin-bottom: 0.8em;
