@@ -1,7 +1,97 @@
 (function(){
-    var filters = ["Highlights", "Interactives", "Writing", "Data", "Tools", "Video"]
+    var filters = ["Highlights", "Interactives", "Writing", "Data", "Video"]
 
     var storydata = [
+    {
+        "id":'lata-viz',
+        "link":'http://www.hindustantimes.com/static/lata-mangeshkar-every-hindi-film-song-one-graphic/',
+        "title":"Every Hindi film song by Lata Mangeshkar, in one graphic",
+        "source":'Hindustan Times',
+        "category":'code + design + data',
+        "img": 'lata.gif',
+        "desc":"Scraped a website with a list of songs by Lata Mangeshkar - a popular Indian singer. Created a scroller interactive visualizing her entire career. <i>Tools: HTML/CSS, Underscore.js, d3.js., node.js, Open Refine.</i>",
+        "filterlist":"Interactives/Highlights/Data"
+    },
+    {
+        "id":'lata-song-generator',
+        "link":'http://www.hindustantimes.com/static/lata-mangeshkar-every-hindi-film-song-one-graphic/',
+        "title":"A Lata Mangeshkar song for every mood",
+        "source":'Hindustan Times',
+        "category":'code + data',
+        "img": 'lata.png',
+        "desc":"Scraped a website with a list of songs by Lata Mangeshkar - a popular Indian singer. <a href = 'http://www.twitter.com/Harry_Stevens'>Harry Stevens</a> then built this tool based on categories in the dataset.<i>Tools: node.js, Open Refine.</i>",
+        "filterlist":"Interactives/Highlights/Data"
+    },
+    {
+        "id":'olympics-men',
+        "link":'http://www.hindustantimes.com/static/olympics/every-country-fastest-man-in-one-race-100m/',
+        "title":"Every country's fastest man in one race",
+        "source":'Hindustan Times',
+        "category":'code + design + data',
+        "img": 'olympics-man.png',
+        "desc":"Worked with the News Apps team at the Hindustan Times to create a data visualization simulating a race amidst the national record holder for the 100-metre race from each country. <i>Tools: HTML/CSS, Underscore.js, d3.js.</i>",
+        "filterlist":"Interactives/Highlights/Data"
+    },
+    {
+        "id":'olympics-women',
+        "link":'http://www.hindustantimes.com/static/olympics/every-country-fastest-man-in-one-race-100m/',
+        "title":"Every country's fastest woman in one race",
+        "source":'Hindustan Times',
+        "category":'code + design + data',
+        "img": 'olympics-woman.png',
+        "desc":"Worked with the News Apps team at the Hindustan Times to create a data visualization simulating a race amidst the national record holder for the 100-metre race from each country. <i>Tools: HTML/CSS, Underscore.js, d3.js.</i>",
+        "filterlist":"Interactives/Highlights/Data"
+    },
+    {
+        "id":'olympics-compare',
+        "link":'http://www.hindustantimes.com/static/olympics/race-two-countries-100m/',
+        "title":"The 100-metre sprint where you get to choose the runners",
+        "source":'Hindustan Times',
+        "category":'code + design + data',
+        "img": 'olympics-compare.png',
+        "desc":"Created a news game that lets you simulate a race between the national record holder from any two countries for the 100-metre sprint. <i>Tools: HTML/CSS, Underscore.js, d3.js.</i>",
+        "filterlist":"Interactives/Data"
+    },
+    {
+        "id":'delhi',
+        "link":'http://www.hindustantimes.com/static/partition/delhi/',
+        "title":"The decade that changed Delhi",
+        "source":'Hindustan Times',
+        "category":'code + design',
+        "img": 'delhi.png',
+        "desc":"Used historical maps to show the growth of Delhi because of the partition of India in 1947. <i>Tools: HTML/CSS, Illustrator, ai2html.</i>",
+        "filterlist":"Interactives/Highlights"
+    },
+    {
+        "id":'disorders',
+        "link":'http://www.jsonline.com/watchdog/Illness-inflation-how-everyday-conditions-become-medical-disorders-380291351.html',
+        "title":"Illness Inflation: How everyday conditions become medical disorders",
+        "source":'The Milwaukee Journal Sentinel',
+        "category":'code + design',
+        "img": 'disorders.png',
+        "desc":"Designed and developed an interactive to explore different medical conditions that were unknown 10 years ago. Part of an ongoing investigation \"Illness Inflation.\" <b><em>Tools: HTML/CSS/JavaScript, Python, Tarbell, Illustrator.</b></em>",
+        "filterlist":"Interactives/Highlights"
+    },
+    {
+            "id":'debtcalculator',
+            "link":'http://www.jsonline.com/business/whats-the-real-cost-of-your-student-loans-379971231.html',
+            "title":"What's the real cost of your student loan?",
+            "source":'The Milwaukee Journal Sentinel',
+            "category":'code + data + design',
+            "img": 'debt-calc.jpg',
+            "desc":"Designed and developed a multi-loan debt calculator. To add context to a person's debt, combined national and school level data for comparison. As users adjust their monthly payment, it generates a narrative explaining their debt repayment schedule. <b><em>Tools: HTML/CSS/SASS/JavaScript, d3.js, underscore.js.</b></em>",
+            "filterlist":"Interactives/Highlights/Data"
+        },
+        {
+        "id":'homicides',
+        "link":'http://apps.mypalmbeachpost.com/homicides/',
+        "title":"The Palm Beach Post Homicide Tracker",
+        "source":'The Palm Beach Post',
+        "category":'code + data + design',
+        "img": 'homicides.png',
+        "desc":"Designed and developed an interactive homicide tracker and set up a work flow that makes the updation process reporting friendly as well as seamless and quick. It uses Backbone.js for filtering and generates static pages using frozen flask for the incident pages. <b><em>Tools: HTML/CSS, Backbone.js, Python/Flask, git, Illustrator.</b></em>",
+        "filterlist":"Interactives/Highlights/Data"
+    },
     {
             "id":'soberhome',
             "link":'http://www.mypalmbeachpost.com/news/news/heres-a-little-known-way-cities-can-keep-tabs-on-s/nrDMs/',
@@ -10,7 +100,7 @@
             "category":'words',
             "img": 'soberhome.jpg',
             "desc":'Palm Beach County is home to hundreds of sober homes, most of which are not regulated. While cities say that they can\'t take strong actions because of the Americans with Disabilities Act, I used public records and extensive reporting to highlight one tool that they fail to use.',
-            "filterlist":"Writing/Highlights"
+            "filterlist":"Writing"
         },
     {
             "id":'kyc',
@@ -30,7 +120,7 @@
             category: 'design',
             desc: "For a story about the behind the scenes of a spring training stadium in Palm Beach County, I made baseball cards for the characters involved.<em><b>Tools: Photoshop, JavaScript, HTML/CSS</em></b>",
             img: 'baseball.png',
-            filterlist:'Interactives/Highlights'
+            filterlist:'Interactives'
         },
         {
             "id":'sports-college',
@@ -60,7 +150,7 @@
             category:'words',
             desc:'The story is a behind the scenes account of building virtual reality teams in newsrooms.',
             img:'vr.png',
-            filterlist:'Writing/Highlights'
+            filterlist:'Writing'
         },
         {
             id:'structuredjournalism',
@@ -83,16 +173,6 @@
             filterlist:'Interactives/Highlights/Data'
         },
         {
-            id: 'notable',
-            link: 'https://gurmanbh.github.io/notable/',
-            title: 'Notable',
-            source: 'Personal project',
-            category: 'tool',
-            desc: "Notable is a prototype for inline annotation powered by Google Spreadsheets. As an example, I <a href='http://gurmanbhatia.com/notable/notable-resume.html' target = '_blank'>annotated my CV using Notable.</a> The project is still under development and the code can be found on <a href = 'http://github.com/gurmanbh/notable' target='_blank'>Github.</a>",
-            img: 'notable.png',
-            filterlist:"Tools"
-        },
-        {
             id: 'tiktok',
             link: 'http://www.poynter.org/news/mediawire/371490/tragic-images-of-children-captured-by-photojournalists-over-time/',
             title: 'Tragic images of children captured by photojournalists over time',
@@ -102,7 +182,6 @@
             img: 'tiktok.png',
             filterlist:"Interactives"
         },
-
         {
             id: 'netneutrality',
             link: 'https://gurmanbh.github.io/netneutrality-india',
@@ -122,7 +201,7 @@
             category: 'words + code + design',
             desc: "Presented in a combination of snaps and text, this story uses Snapchat's aesthetics and interface to traces the journey of the brand towards a revenue based model.<em><b>Tools: HTML/CSS, JavaScript, PhotoShop</em></b>",
             img: 'snapchat-inside.png',
-            filterlist:"Interactives/Highlights"
+            filterlist:"Interactives"
         },
 
         {
@@ -133,19 +212,8 @@
             category: 'words + data',
             desc: "There are 29 Bangladeshi restaurants in New York City. By contrast, there are 318 Indian restaurants. This story captures the rise of the Bangladeshi pride in the city’s restaurant industry. <em><b>Tools: MS Excel</em></b>",
             img: 'neerob.png',
-            filterlist:"Data/Highlights/Writing"
-        },
-        {
-            id: 'wifi',
-            link: 'http://thebrooklynink.com/2014/12/15/54267-public-high-speed-internet-access-its-coming/',
-            title: 'Public High-Speed Internet Access? It’s Coming!',
-            source: 'The Brooklyn Ink',
-            category: 'words + data + mapping',
-            desc: "Two maps that show broadband access in New York City at present and the vision of the city's upcoming Municipal Wi-Fi project. <em><b>Tools: CartoDB, R</em></b>",
-            img: 'wifi.png',
             filterlist:"Data/Writing"
         },
-
         {
             "id":'interviewing',
             "link":'https://www.facebook.com/Poynter/videos/vb.5752246165/10153446685391166/?type=2&theater',
