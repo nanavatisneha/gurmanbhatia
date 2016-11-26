@@ -3,6 +3,36 @@
 
     var storydata = [
     {
+        "id":'open-records',
+        "link":'http://projects.jsonline.com/apps/state-secrets/',
+        "title":"State Secrets: Open records laws across the nation",
+        "source":'The Journal Sentinel',
+        "category":'design + data + code',
+        "img": 'state-secrets.png',
+        "desc":"Designed and developed a searchable database showing public record laws across the United States. <i>Tools: HTML/CSS, d3.js, Tarbell, Flask. </i>",
+        "filterlist":"Interactives/Highlights/Data"
+    },
+    {
+        "id":'pollution',
+        "link":'http://www.hindustantimes.com/static/pollution-india-five-charts/',
+        "title":"India's air pollution in five charts",
+        "source":'Hindustan Times',
+        "category":'design + data',
+        "img": 'airpollution.jpg',
+        "desc":"Analysed data from HT's air quality portal and traced how Delhi is not the only toxic city in the country. <i>Tools: HTML/CSS, d3.js, Underscore.js., node.js, R. </i>",
+        "filterlist":"Interactives/Highlights/Data"
+    },
+    {
+        "id":'crackers',
+        "link":'http://www.hindustantimes.com/static/diwali-crackers-pollution/',
+        "title":"How toxic are your favorite firecrackers?",
+        "source":'Hindustan Times',
+        "category":'code + design + data',
+        "img": 'crackers.png',
+        "desc":"Built a simulation with real time air pollution data to show what happens to the air around you every time you burst a cracker. <i>Tools: HTML/CSS, d3.js, Underscore.js. </i>",
+        "filterlist":"Interactives/Highlights/Data"
+    },
+    {
         "id":'lata-viz',
         "link":'http://www.hindustantimes.com/static/lata-mangeshkar-every-hindi-film-song-one-graphic/',
         "title":"Every Hindi film song by Lata Mangeshkar, in one graphic",
@@ -14,7 +44,7 @@
     },
     {
         "id":'lata-song-generator',
-        "link":'http://www.hindustantimes.com/static/lata-mangeshkar-every-hindi-film-song-one-graphic/',
+        "link":'http://www.hindustantimes.com/static/let-lata-mangeshkar-sing/',
         "title":"A Lata Mangeshkar song for every mood",
         "source":'Hindustan Times',
         "category":'code + data',
@@ -60,7 +90,7 @@
         "category":'code + design',
         "img": 'delhi.png',
         "desc":"Used historical maps to show the growth of Delhi because of the partition of India in 1947. <i>Tools: HTML/CSS, Illustrator, ai2html.</i>",
-        "filterlist":"Interactives/Highlights"
+        "filterlist":"Highlights"
     },
     {
         "id":'disorders',
@@ -70,7 +100,7 @@
         "category":'code + design',
         "img": 'disorders.png',
         "desc":"Designed and developed an interactive to explore different medical conditions that were unknown 10 years ago. Part of an ongoing investigation \"Illness Inflation.\" <b><em>Tools: HTML/CSS/JavaScript, Python, Tarbell, Illustrator.</b></em>",
-        "filterlist":"Interactives/Highlights"
+        "filterlist":"Interactives"
     },
     {
             "id":'debtcalculator',
