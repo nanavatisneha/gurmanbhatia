@@ -1,7 +1,77 @@
 (function(){
-    var filters = ["Highlights", "Interactives", "Writing", "Data", "Video"]
+    var filters = ["Highlights", "Dashboards","Interactives", "Writing", "Data", "Video"]
 
     var storydata = [
+    {
+        "id":'islands-of-women',
+        "link":'http://www.hindustantimes.com/interactives/elections-2017-islands-of-women',
+        "title":"Islands of women: Few women contest assembly polls and even fewer win",
+        "source":'The Hindustan Times',
+        "category":'design + data',
+        "img": 'islands.jpg',
+        "desc":"Reimagining five Indian states based on the success of female candidates in the 2017 elections. <i>Tools: HTML/CSS, ai2html, QGIS, Photoshop, Illustrator, R. </i>",
+        "filterlist":"Highlights/Data"
+    },
+    {
+        "id":'mlas',
+        "link":'http://www.hindustantimes.com/interactives/election-results-which-mla-are-you-most-like',
+        "title":"Which newly elected MLA are you most like?",
+        "source":'The Hindustan Times',
+        "category":'data + code',
+        "img": 'mlas.jpg',
+        "desc":"Reimagining five Indian states based on the success of female candidates in the 2017 elections. <i>Tools: HTML/CSS, ai2html, QGIS, Photoshop, Illustrator, R. </i>",
+        "filterlist":"Interactives/Data"
+    },
+    {
+        "id":'live-election-data',
+        "link":'http://www.hindustantimes.com/interactives/punjab-election-results-2017-live-data/',
+        "title":"Live results for 2017 assembly election results",
+        "source":'The Hindustan Times',
+        "category":'design + data + code',
+        "img": 'maps.png',
+        "desc":"Designed a dashboard showing live results for state elections in India. By integrating data from the Election Commission of India (ECI) and Association for Democratic Reforms (ADR) we figured the gender, wealth and criminal background of elected MLAs, live as the results came in. In addition, we had maps that showed voter turnout, seats that had flipped and the margin of victory.<i>Tools: HTML/CSS, d3.js, underscore.js. </i>",
+        "filterlist":"Dashboards/Highlights/Data"
+    },
+    {
+        "id":'elections-candidates',
+        "link":'http://www.hindustantimes.com/interactives/election-candidates-2017/',
+        "title":"Know your candidates",
+        "source":'The Hindustan Times',
+        "category":'design + data + code',
+        "img": 'candidates.png',
+        "desc":"Designed and developed a database for all candidates contesting in the 2017 Indian assembly elections. <i>Tools: HTML/CSS, d3.js, Tarbell, Flask. </i>",
+        "filterlist":"Dashboards/Highlights/Data"
+    },
+    {
+        "id":'ipl',
+        "link":'http://www.hindustantimes.com/interactives/ipl-auction-game/',
+        "title":"Guess how much these IPL auction players cost",
+        "source":'The Hindustan Times',
+        "category":'data + code',
+        "img": 'ipl.jpg',
+        "desc":'Designed a game like scenario where you bid on cricket players and it compares your bid with the actual amount for which they were sold. <i>Tools: HTML/CSS, underscore.js </i>',
+        "filterlist":"Interactives/Data"
+    },
+    {
+        "id":'emoji',
+        "link":'https://www.facebook.com/hindustantimes/videos/10154594404013580/',
+        "title":"The Preamble in emoji",
+        "source":'The Hindustan Times',
+        "category":'design + video',
+        "img": 'preamble.png',
+        "desc":'Created a video showing the Preamble to the Constitution of India in emojis. <i>Tools: Photoshop, After Effects. </i>',
+        "filterlist":"Highlights/Video"
+    },
+    {
+        "id":'demonetisation',
+        "link":'http://www.hindustantimes.com/static/demonetisation-timeline/',
+        "title":"Demonetisation’s ever-changing rules: a complete history",
+        "source":'The Hindustan Times',
+        "category":'design + data + code',
+        "img": 'demonetisation.png',
+        "desc":'Designed a data-driven timeline of all rule changes that have happened since Narendra Modi banned Rs 1,000 and Rs 500 notes in India. <i>Tools: HTML/CSS, d3.js. </i>',
+        "filterlist":"Interactives/Highlights/Data"
+    },
     {
         "id":'open-records',
         "link":'http://projects.jsonline.com/apps/state-secrets/',
@@ -10,7 +80,7 @@
         "category":'design + data + code',
         "img": 'state-secrets.png',
         "desc":"Designed and developed a searchable database showing public record laws across the United States. <i>Tools: HTML/CSS, d3.js, Tarbell, Flask. </i>",
-        "filterlist":"Interactives/Highlights/Data"
+        "filterlist":"Dashboards/Highlights/Data"
     },
     {
         "id":'pollution',
@@ -120,7 +190,7 @@
         "category":'code + data + design',
         "img": 'homicides.png',
         "desc":"Designed and developed an interactive homicide tracker and set up a work flow that makes the updation process reporting friendly as well as seamless and quick. It uses Backbone.js for filtering and generates static pages using frozen flask for the incident pages. <b><em>Tools: HTML/CSS, Backbone.js, Python/Flask, git, Illustrator.</b></em>",
-        "filterlist":"Interactives/Highlights/Data"
+        "filterlist":"Dashboards/Highlights/Data"
     },
     {
             "id":'soberhome',
@@ -140,7 +210,7 @@
             "category":'code + design',
             "img": 'kyc.png',
             "desc":'Developed and designed Tarbell-based site for Palm Beach County\'s 2016 municipal elections. <em><b>Tools: Python, Flask, HTML/CSS/JavaScript.</em></b>',
-            "filterlist":"Interactives/Highlights/Data"
+            "filterlist":"Dashboards/Data"
         },
     {
             id: 'baseball',
@@ -203,16 +273,6 @@
             filterlist:'Interactives/Highlights/Data'
         },
         {
-            id: 'tiktok',
-            link: 'http://www.poynter.org/news/mediawire/371490/tragic-images-of-children-captured-by-photojournalists-over-time/',
-            title: 'Tragic images of children captured by photojournalists over time',
-            source: 'Poynter',
-            category: 'code + design + images',
-            desc: "Due to the sensitive nature of the visuals, I added custom functionalities to <a href='https://github.com/datanews/tik-tok' target='_blank'>WNYC's Tik-Tok</a> to blur images using CSS.",
-            img: 'tiktok.png',
-            filterlist:"Interactives"
-        },
-        {
             id: 'netneutrality',
             link: 'https://gurmanbh.github.io/netneutrality-india',
             title: 'What choices are you making when you buy mobile Internet in India?',
@@ -220,7 +280,7 @@
             category: 'words + code + design',
             desc: "India is the second biggest mobile phone market in the world and nearly 90 percent of the 20 percent of population has access to the Internet, accesses it through mobile. In light of the Net Neutrality debate, this news app helps you compare regular Internet plans with Facebook and WhatsApp only packs that are offered by certain telecom providers.<em><b>Tools: HTML/CSS, JavaScript (d3 + jQueryUI + Underscore.)</em></b>",
             img: 'nn.png',
-            filterlist:"Interactives/Highlights/Data"
+            filterlist:"Interactives/Data"
         },
 
         {
@@ -234,16 +294,16 @@
             filterlist:"Interactives"
         },
 
-        {
-            id: 'bangladesh',
-            link: 'http://columbiajournalist.org/now-on-the-menu-bangladeshi-pride/',
-            title: 'Now on the Menu: Bangladeshi Pride',
-            source: 'The Columbia Journalist',
-            category: 'words + data',
-            desc: "There are 29 Bangladeshi restaurants in New York City. By contrast, there are 318 Indian restaurants. This story captures the rise of the Bangladeshi pride in the city’s restaurant industry. <em><b>Tools: MS Excel</em></b>",
-            img: 'neerob.png',
-            filterlist:"Data/Writing"
-        },
+        // {
+        //     id: 'bangladesh',
+        //     link: 'http://columbiajournalist.org/now-on-the-menu-bangladeshi-pride/',
+        //     title: 'Now on the Menu: Bangladeshi Pride',
+        //     source: 'The Columbia Journalist',
+        //     category: 'words + data',
+        //     desc: "There are 29 Bangladeshi restaurants in New York City. By contrast, there are 318 Indian restaurants. This story captures the rise of the Bangladeshi pride in the city’s restaurant industry. <em><b>Tools: MS Excel</em></b>",
+        //     img: 'neerob.png',
+        //     filterlist:"Data/Writing"
+        // },
         {
             "id":'interviewing',
             "link":'https://www.facebook.com/Poynter/videos/vb.5752246165/10153446685391166/?type=2&theater',
