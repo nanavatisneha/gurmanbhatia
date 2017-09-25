@@ -3,10 +3,80 @@
 
     var storydata = [
     {
+        "id":'parliament',
+        "link":'http://www.hindustantimes.com/interactives/parliament-monsoon-session-2017-calendar/',
+        "title":"Two charts that show what every day in the Indian Parliament looks like",
+        "source":'Hindustan Times',
+        "category":'design + data',
+        "img": 'parliament.png',
+        "desc":"Visualised the entire monsoon session of Parliament in a calendar like format. <i>Tools: HTML/CSS/JS, d3.js. </i>",
+        "filterlist":"Highlights/Data"
+    },
+    {
+        "id":'aadhaar',
+        "link":'http://www.hindustantimes.com/interactives/aadhaar-mandatory-schemes-timeline/',
+        "title":"PAN, bank accounts and over 100 services, schemes you need to link your Aadhaar to",
+        "source":'Hindustan Times',
+        "category":'design + data',
+        "img": 'aadhaar.jpg',
+        "desc":"List of all government schemes and services for which you need Aadhaar. <i>Tools: HTML/CSS/JS, d3.js. </i>",
+        "filterlist":"Highlights/Dashboards"
+    },
+    {
+        "id":'hate-tracker',
+        "link":'http://www.hindustantimes.com/hate-tracker',
+        "title":"Hate Tracker",
+        "source":'Hindustan Times',
+        "category":'design + data + code',
+        "img": 'hate.png',
+        "desc":"A database of identity-based hate crimes in India. <i>Tools: HTML/CSS/JS, node.js, django. </i>",
+        "filterlist":"Highlights/Dashboards"
+    },
+    {
+        "id":'gst',
+        "link":'http://www.hindustantimes.com/interactives/gst-rate-complete-list',
+        "title":"Find out the GST rate for goods and services in seven languages",
+        "source":'Hindustan Times',
+        "category":'design + data',
+        "img": 'gst.png',
+        "desc":"Cleaned some pdfs from CBEC to create a dashboard with a list of GST rates for over 1,300 goods and services. <i>Tools: HTML/CSS/JS, Adobe Acrobat, Tabula, node.js. </i>",
+        "filterlist":"Highlights/Dashboards"
+    },
+    {
+        "id":'du',
+        "link":'http://www.hindustantimes.com/interactives/delhi-university-cutoffs-2017-decade-one-chart/',
+        "title":"A decade of soaring Delhi University cutoffs in one chart",
+        "source":'Hindustan Times',
+        "category":'design + data + code',
+        "img": 'du.png',
+        "desc":"Collected a decade worth of DU cutoffs from Hindustan Times archives and captured how the they have moved towards the 90s. <i>Tools: HTML/CSS, Adobe Acrobat, Tabula, d3.js, node.js. </i>",
+        "filterlist":"Highlights/Interactives/Data"
+    },
+    {
+        "id":'president',
+        "link":'http://www.hindustantimes.com/interactives/how-india-president-elected-explainer/',
+        "title":"How India picks its President, visually explained",
+        "source":'Hindustan Times',
+        "category":'design + data',
+        "img": 'president.jpg',
+        "desc":"An explainer that walks one through the process of electing the President of India. <i>Tools: HTML/CSS, d3.js, Illustrator.</i>",
+        "filterlist":"Highlights/Data"
+    },
+    {
+        "id":'delhi-schools',
+        "link":'http://www.hindustantimes.com/class-of-2018/how-hard-is-it-to-find.html',
+        "title":"For a girl living in Delhi's Sangam Vihar, the nearest school offering Science is an hour long bus ride away.",
+        "source":'Hindustan Times',
+        "category":'design + data',
+        "img": 'delhi-school.png',
+        "desc":"A data-driven scroller that looks at the restricted access and performance of government schools in Delhi. <i>Tools: HTML/CSS, d3.js, node.js.</i>",
+        "filterlist":"Highlights/Data/Interactives"
+    },
+    {
         "id":'islands-of-women',
         "link":'http://www.hindustantimes.com/interactives/elections-2017-islands-of-women',
         "title":"Islands of women: Few women contest assembly polls and even fewer win",
-        "source":'The Hindustan Times',
+        "source":'Hindustan Times',
         "category":'design + data',
         "img": 'islands.jpg',
         "desc":"Reimagining five Indian states based on the success of female candidates in the 2017 elections. <i>Tools: HTML/CSS, ai2html, QGIS, Photoshop, Illustrator, R. </i>",
@@ -16,7 +86,7 @@
         "id":'mlas',
         "link":'http://www.hindustantimes.com/interactives/election-results-which-mla-are-you-most-like',
         "title":"Which newly elected MLA are you most like?",
-        "source":'The Hindustan Times',
+        "source":'Hindustan Times',
         "category":'data + code',
         "img": 'mlas.jpg',
         "desc":"Reimagining five Indian states based on the success of female candidates in the 2017 elections. <i>Tools: HTML/CSS, ai2html, QGIS, Photoshop, Illustrator, R. </i>",
@@ -26,7 +96,7 @@
         "id":'live-election-data',
         "link":'http://www.hindustantimes.com/interactives/punjab-election-results-2017-live-data/',
         "title":"Live results for 2017 assembly election results",
-        "source":'The Hindustan Times',
+        "source":'Hindustan Times',
         "category":'design + data + code',
         "img": 'maps.png',
         "desc":"Designed a dashboard showing live results for state elections in India. By integrating data from the Election Commission of India (ECI) and Association for Democratic Reforms (ADR) we figured the gender, wealth and criminal background of elected MLAs, live as the results came in. In addition, we had maps that showed voter turnout, seats that had flipped and the margin of victory.<i>Tools: HTML/CSS, d3.js, underscore.js. </i>",
@@ -36,7 +106,7 @@
         "id":'elections-candidates',
         "link":'http://www.hindustantimes.com/interactives/election-candidates-2017/',
         "title":"Know your candidates",
-        "source":'The Hindustan Times',
+        "source":'Hindustan Times',
         "category":'design + data + code',
         "img": 'candidates.png',
         "desc":"Designed and developed a database for all candidates contesting in the 2017 Indian assembly elections. <i>Tools: HTML/CSS, d3.js, Tarbell, Flask. </i>",
@@ -46,7 +116,7 @@
         "id":'ipl',
         "link":'http://www.hindustantimes.com/interactives/ipl-auction-game/',
         "title":"Guess how much these IPL auction players cost",
-        "source":'The Hindustan Times',
+        "source":'Hindustan Times',
         "category":'data + code',
         "img": 'ipl.jpg',
         "desc":'Designed a game like scenario where you bid on cricket players and it compares your bid with the actual amount for which they were sold. <i>Tools: HTML/CSS, underscore.js </i>',
@@ -56,7 +126,7 @@
         "id":'emoji',
         "link":'https://www.facebook.com/hindustantimes/videos/10154594404013580/',
         "title":"The Preamble in emoji",
-        "source":'The Hindustan Times',
+        "source":'Hindustan Times',
         "category":'design + video',
         "img": 'preamble.png',
         "desc":'Created a video showing the Preamble to the Constitution of India in emojis. <i>Tools: Photoshop, After Effects. </i>',
@@ -66,7 +136,7 @@
         "id":'demonetisation',
         "link":'http://www.hindustantimes.com/static/demonetisation-timeline/',
         "title":"Demonetisation’s ever-changing rules: a complete history",
-        "source":'The Hindustan Times',
+        "source":'Hindustan Times',
         "category":'design + data + code',
         "img": 'demonetisation.png',
         "desc":'Designed a data-driven timeline of all rule changes that have happened since Narendra Modi banned Rs 1,000 and Rs 500 notes in India. <i>Tools: HTML/CSS, d3.js. </i>',
@@ -90,7 +160,7 @@
         "category":'design + data',
         "img": 'airpollution.jpg',
         "desc":"Analysed data from HT's air quality portal and traced how Delhi is not the only toxic city in the country. <i>Tools: HTML/CSS, d3.js, Underscore.js., node.js, R. </i>",
-        "filterlist":"Interactives/Highlights/Data"
+        "filterlist":"Interactives/Data"
     },
     {
         "id":'crackers',
@@ -129,7 +199,7 @@
         "source":'Hindustan Times',
         "category":'code + design + data',
         "img": 'olympics-man.png',
-        "desc":"Worked with the News Apps team at the Hindustan Times to create a data visualization simulating a race amidst the national record holder for the 100-metre race from each country. <i>Tools: HTML/CSS, Underscore.js, d3.js.</i>",
+        "desc":"Worked with the News Apps team at Hindustan Times to create a data visualization simulating a race amidst the national record holder for the 100-metre race from each country. <i>Tools: HTML/CSS, Underscore.js, d3.js.</i>",
         "filterlist":"Interactives/Highlights/Data"
     },
     {
@@ -139,8 +209,8 @@
         "source":'Hindustan Times',
         "category":'code + design + data',
         "img": 'olympics-woman.png',
-        "desc":"Worked with the News Apps team at the Hindustan Times to create a data visualization simulating a race amidst the national record holder for the 100-metre race from each country. <i>Tools: HTML/CSS, Underscore.js, d3.js.</i>",
-        "filterlist":"Interactives/Highlights/Data"
+        "desc":"Worked with the News Apps team at Hindustan Times to create a data visualization simulating a race amidst the national record holder for the 100-metre race from each country. <i>Tools: HTML/CSS, Underscore.js, d3.js.</i>",
+        "filterlist":"Interactives/Data"
     },
     {
         "id":'olympics-compare',
@@ -293,17 +363,6 @@
             img: 'snapchat-inside.png',
             filterlist:"Interactives"
         },
-
-        // {
-        //     id: 'bangladesh',
-        //     link: 'http://columbiajournalist.org/now-on-the-menu-bangladeshi-pride/',
-        //     title: 'Now on the Menu: Bangladeshi Pride',
-        //     source: 'The Columbia Journalist',
-        //     category: 'words + data',
-        //     desc: "There are 29 Bangladeshi restaurants in New York City. By contrast, there are 318 Indian restaurants. This story captures the rise of the Bangladeshi pride in the city’s restaurant industry. <em><b>Tools: MS Excel</em></b>",
-        //     img: 'neerob.png',
-        //     filterlist:"Data/Writing"
-        // },
         {
             "id":'interviewing',
             "link":'https://www.facebook.com/Poynter/videos/vb.5752246165/10153446685391166/?type=2&theater',
