@@ -3,6 +3,26 @@
 
     var storydata = [
     {
+        "id":'bollywood-music',
+        "link":'https://www.hindustantimes.com/interactives/bollywood-songs-gender/',
+        "title":"Women are fading out from Bollywood music",
+        "source":'Hindustan Times',
+        "category":'data + code + design',
+        "img": 'bollywood.png',
+        "desc":"Analysed over 24,000 songs from the top 50 Bollywood grossers since 1950 and found out that female singers are declining from the spectrum of Bollywood music. <i>Tools: HTML/CSS/JS, d3.js, R, node.js, Open Refine. </i>",
+        "filterlist":"Highlights/Data/Writing"
+    },
+        {
+        "id":'gujarat',
+        "link":'https://www.hindustantimes.com/interactives/gujarat-margin-analysis/',
+        "title":"Winning a state election in Gujarat has become harder",
+        "source":'Hindustan Times',
+        "category":'data + code + design',
+        "img": 'gujarat.png',
+        "desc":"With decreasing margins of victory, assembly elections in Gujarat are becoming a close contest. <i>Tools: HTML/CSS/JS, d3.js, node.js. </i>",
+        "filterlist":"Highlights/Data/Interactives"
+    },
+    {
         "id":'parliament',
         "link":'http://www.hindustantimes.com/interactives/parliament-monsoon-session-2017-calendar/',
         "title":"Two charts that show what every day in the Indian Parliament looks like",
@@ -20,17 +40,7 @@
         "category":'design + data',
         "img": 'aadhaar.jpg',
         "desc":"List of all government schemes and services for which you need Aadhaar. <i>Tools: HTML/CSS/JS, d3.js. </i>",
-        "filterlist":"Highlights/Dashboards"
-    },
-    {
-        "id":'hate-tracker',
-        "link":'http://www.hindustantimes.com/hate-tracker',
-        "title":"Hate Tracker",
-        "source":'Hindustan Times',
-        "category":'design + data + code',
-        "img": 'hate.png',
-        "desc":"A database of identity-based hate crimes in India. <i>Tools: HTML/CSS/JS, node.js, django. </i>",
-        "filterlist":"Highlights/Dashboards"
+        "filterlist":"Dashboards"
     },
     {
         "id":'gst',
@@ -40,7 +50,7 @@
         "category":'design + data',
         "img": 'gst.png',
         "desc":"Cleaned some pdfs from CBEC to create a dashboard with a list of GST rates for over 1,300 goods and services. <i>Tools: HTML/CSS/JS, Adobe Acrobat, Tabula, node.js. </i>",
-        "filterlist":"Highlights/Dashboards"
+        "filterlist":"Dashboards"
     },
     {
         "id":'du',
@@ -70,7 +80,7 @@
         "category":'design + data',
         "img": 'delhi-school.png',
         "desc":"A data-driven scroller that looks at the restricted access and performance of government schools in Delhi. <i>Tools: HTML/CSS, d3.js, node.js.</i>",
-        "filterlist":"Highlights/Data/Interactives"
+        "filterlist":"Data/Interactives"
     },
     {
         "id":'islands-of-women',
@@ -179,7 +189,7 @@
         "source":'Hindustan Times',
         "category":'code + design + data',
         "img": 'lata.gif',
-        "desc":"Scraped a website with a list of songs by Lata Mangeshkar - a popular Indian singer. Created a scroller interactive visualizing her entire career. <i>Tools: HTML/CSS, Underscore.js, d3.js., node.js, Open Refine.</i>",
+        "desc":"Won a Malofiej Bronze in the entertainment category. Made it to the Kantar Information is Beautiful Longlist. Scraped a website with a list of songs by Lata Mangeshkar - a popular Indian singer. Created a scroller interactive visualizing her entire career. <i>Tools: HTML/CSS, Underscore.js, d3.js., node.js, Open Refine.</i>",
         "filterlist":"Interactives/Highlights/Data"
     },
     {
@@ -199,7 +209,7 @@
         "source":'Hindustan Times',
         "category":'code + design + data',
         "img": 'olympics-man.png',
-        "desc":"Worked with the News Apps team at Hindustan Times to create a data visualization simulating a race amidst the national record holder for the 100-metre race from each country. <i>Tools: HTML/CSS, Underscore.js, d3.js.</i>",
+        "desc":" Made it to the Kantar Information is Beautiful Longlist. A data visualization simulating a race amidst the national record holder for the 100-metre race from each country. <i>Tools: HTML/CSS, Underscore.js, d3.js.</i>",
         "filterlist":"Interactives/Highlights/Data"
     },
     {
