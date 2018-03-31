@@ -20,7 +20,7 @@
         "category":'data + code + design',
         "img": 'gujarat.png',
         "desc":"With decreasing margins of victory, assembly elections in Gujarat are becoming a close contest. <i>Tools: HTML/CSS/JS, d3.js, node.js. </i>",
-        "filterlist":"Highlights/Data/Interactives"
+        "filterlist":"Data/Interactives"
     },
     {
         "id":'parliament',
