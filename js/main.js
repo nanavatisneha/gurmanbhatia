@@ -1,7 +1,51 @@
 (function(){
-    var filters = ["Highlights", "Dashboards","Interactives", "Writing", "Data", "Video"]
 
     var storydata = [
+    {
+        "id":'pollution-palette',
+        "link":'https://graphics.reuters.com/INDIA-POLLUTION/010081VR3BW/index.html',
+        "title":"Palette of Pollution",
+        "source":'Reuters Graphics',
+        "category":'data + code + design',
+        "img": 'palette.gif',
+        date:'December 2018'
+    },
+    {
+        "id":'india-state-assemblies',
+        "link":'https://graphics.reuters.com/INDIA-ELECTION/010081Q132Y/index.html',
+        "title":"The changing face of Indian state assemblies",
+        "source":'Reuters Graphics',
+        "category":'data + code + design',
+        "img": 'india-state-assem.png',
+        date:'November 2018'
+    },
+    {
+        "id":'india-pollution',
+        "link":'https://graphics.reuters.com/INDIA-POLLUTION/01008173281/index.html',
+        "title":"A window into Delhi’s deadly pollution",
+        "source":'Reuters Graphics',
+        "category":'data + code + design',
+        "img": 'delhi-window.gif',
+        date:'November 2018'
+    },
+    {
+        "id":'india-petrol',
+        "link":'https://fingfx.thomsonreuters.com/gfx/rngs/INDIA-ELECTION-FUEL/010080DM0SB/index.html',
+        "title":"India’s premium price of petrol",
+        "source":'Reuters Graphics',
+        "category":'data + code + design',
+        "img": 'petrol.png',
+        date:'September 2018'
+    },
+    {
+        "id":'lake-toba',
+        "link":'https://graphics.reuters.com/INDONESIA-FERRY/010070ZL20Y/index.html',
+        "title":"Tragedy on Lake Toba",
+        "source":'Reuters Graphics',
+        "img": 'toba.gif',
+        date:'July 2018'
+    },
+    
     {
         "id":'bollywood-music',
         "link":'https://www.hindustantimes.com/interactives/bollywood-songs-gender/',
@@ -102,40 +146,20 @@
         "desc":"Reimagining five Indian states based on the success of female candidates in the 2017 elections. <i>Tools: HTML/CSS, ai2html, QGIS, Photoshop, Illustrator, R. </i>",
         "filterlist":"Interactives/Data"
     },
-    {
-        "id":'live-election-data',
-        "link":'http://www.hindustantimes.com/interactives/punjab-election-results-2017-live-data/',
-        "title":"Live results for 2017 assembly election results",
-        "source":'Hindustan Times',
-        "category":'design + data + code',
-        "img": 'maps.png',
-        "desc":"Designed a dashboard showing live results for state elections in India. By integrating data from the Election Commission of India (ECI) and Association for Democratic Reforms (ADR) we figured the gender, wealth and criminal background of elected MLAs, live as the results came in. In addition, we had maps that showed voter turnout, seats that had flipped and the margin of victory.<i>Tools: HTML/CSS, d3.js, underscore.js. </i>",
-        "filterlist":"Dashboards/Highlights/Data"
-    },
-    {
-        "id":'elections-candidates',
-        "link":'http://www.hindustantimes.com/interactives/election-candidates-2017/',
-        "title":"Know your candidates",
-        "source":'Hindustan Times',
-        "category":'design + data + code',
-        "img": 'candidates.png',
-        "desc":"Designed and developed a database for all candidates contesting in the 2017 Indian assembly elections. <i>Tools: HTML/CSS, d3.js, Tarbell, Flask. </i>",
-        "filterlist":"Dashboards/Highlights/Data"
-    },
-    {
-        "id":'ipl',
-        "link":'http://www.hindustantimes.com/interactives/ipl-auction-game/',
-        "title":"Guess how much these IPL auction players cost",
-        "source":'Hindustan Times',
-        "category":'data + code',
-        "img": 'ipl.jpg',
-        "desc":'Designed a game like scenario where you bid on cricket players and it compares your bid with the actual amount for which they were sold. <i>Tools: HTML/CSS, underscore.js </i>',
-        "filterlist":"Interactives/Data"
-    },
+    // {
+    //     "id":'live-election-data',
+    //     "link":'http://www.hindustantimes.com/interactives/punjab-election-results-2017-live-data/',
+    //     "title":"Live results for 2017 assembly election results",
+    //     "source":'Hindustan Times',
+    //     "category":'design + data + code',
+    //     "img": 'maps.png',
+    //     "desc":"Designed a dashboard showing live results for state elections in India. By integrating data from the Election Commission of India (ECI) and Association for Democratic Reforms (ADR) we figured the gender, wealth and criminal background of elected MLAs, live as the results came in. In addition, we had maps that showed voter turnout, seats that had flipped and the margin of victory.<i>Tools: HTML/CSS, d3.js, underscore.js. </i>",
+    //     "filterlist":"Dashboards/Highlights/Data"
+    // },
     {
         "id":'emoji',
         "link":'https://www.facebook.com/hindustantimes/videos/10154594404013580/',
-        "title":"The Preamble in emoji",
+        "title":"The Indian preamble in emoji",
         "source":'Hindustan Times',
         "category":'design + video',
         "img": 'preamble.png',
@@ -223,16 +247,6 @@
         "filterlist":"Interactives/Data"
     },
     {
-        "id":'olympics-compare',
-        "link":'http://www.hindustantimes.com/static/olympics/race-two-countries-100m/',
-        "title":"The 100-metre sprint where you get to choose the runners",
-        "source":'Hindustan Times',
-        "category":'code + design + data',
-        "img": 'olympics-compare.png',
-        "desc":"Created a news game that lets you simulate a race between the national record holder from any two countries for the 100-metre sprint. <i>Tools: HTML/CSS, Underscore.js, d3.js.</i>",
-        "filterlist":"Interactives/Data"
-    },
-    {
         "id":'delhi',
         "link":'http://www.hindustantimes.com/static/partition/delhi/',
         "title":"The decade that changed Delhi",
@@ -242,16 +256,16 @@
         "desc":"Used historical maps to show the growth of Delhi because of the partition of India in 1947. <i>Tools: HTML/CSS, Illustrator, ai2html.</i>",
         "filterlist":"Highlights"
     },
-    {
-        "id":'disorders',
-        "link":'http://www.jsonline.com/watchdog/Illness-inflation-how-everyday-conditions-become-medical-disorders-380291351.html',
-        "title":"Illness Inflation: How everyday conditions become medical disorders",
-        "source":'The Milwaukee Journal Sentinel',
-        "category":'code + design',
-        "img": 'disorders.png',
-        "desc":"Designed and developed an interactive to explore different medical conditions that were unknown 10 years ago. Part of an ongoing investigation \"Illness Inflation.\" <b><em>Tools: HTML/CSS/JavaScript, Python, Tarbell, Illustrator.</b></em>",
-        "filterlist":"Interactives"
-    },
+    // {
+    //     "id":'disorders',
+    //     "link":'http://www.jsonline.com/watchdog/Illness-inflation-how-everyday-conditions-become-medical-disorders-380291351.html',
+    //     "title":"Illness Inflation: How everyday conditions become medical disorders",
+    //     "source":'The Milwaukee Journal Sentinel',
+    //     "category":'code + design',
+    //     "img": 'disorders.png',
+    //     "desc":"Designed and developed an interactive to explore different medical conditions that were unknown 10 years ago. Part of an ongoing investigation \"Illness Inflation.\" <b><em>Tools: HTML/CSS/JavaScript, Python, Tarbell, Illustrator.</b></em>",
+    //     "filterlist":"Interactives"
+    // },
     {
             "id":'debtcalculator',
             "link":'http://www.jsonline.com/business/whats-the-real-cost-of-your-student-loans-379971231.html',
@@ -282,56 +296,56 @@
             "desc":'Palm Beach County is home to hundreds of sober homes, most of which are not regulated. While cities say that they can\'t take strong actions because of the Americans with Disabilities Act, I used public records and extensive reporting to highlight one tool that they fail to use.',
             "filterlist":"Writing"
         },
-    {
-            "id":'kyc',
-            "link":'http://apps.mypalmbeachpost.com/kyc/',
-            "title":'Know your candidates',
-            "source":'The Palm Beach Post',
-            "category":'code + design',
-            "img": 'kyc.png',
-            "desc":'Developed and designed Tarbell-based site for Palm Beach County\'s 2016 municipal elections. <em><b>Tools: Python, Flask, HTML/CSS/JavaScript.</em></b>',
-            "filterlist":"Dashboards/Data"
-        },
-    {
-            id: 'baseball',
-            link: 'http://www.mypalmbeachpost.com/mark-foley-helps-save-astros-nationals-spring-training-baseball-in-west-palm-beach/',
-            title: 'Spring training hardball: How a disgraced politician helped save the game',
-            source: 'The Palm Beach Post',
-            category: 'design',
-            desc: "For a story about the behind the scenes of a spring training stadium in Palm Beach County, I made baseball cards for the characters involved.<em><b>Tools: Photoshop, JavaScript, HTML/CSS</em></b>",
-            img: 'baseball.png',
-            filterlist:'Interactives'
-        },
-        {
-            "id":'sports-college',
-            "link":'http://www.mypalmbeachpost.com/sports/football-recruiting',
-            "title":'Recruiting Central',
-            "source":'The Palm Beach Post',
-            "category":'code + design',
-            "desc":'Built a front-end layout integrated with Google Spreadsheets within a day to enable our Sports team to make quick and easy live updates to recruitment data for college football teams. With CSS ➡ Table on desktop / cards on mobile. <em><b>Tools: JavaScript, Underscore.js, Tabletop.js, HTML/CSS</em></b>',
-            "img":'football.png',
-            "filterlist":"Interactives"
-        },
-        {
-            "id":'guardianships',
-            "link":'http://www.mypalmbeachpost.com/guardianships-colin-savitt/',
-            "title":'Guardianships - A Broken Trust',
-            "source":'The Palm Beach Post',
-            "category":'code + design',
-            "desc":'Led the design and development for the investigative package within the confines of the CMS. Used <a href = "https://gurmanbh.github.io/notable/" target = "_blank">notable</a> (a custom built tool) to add hover elements for key players in the story. <em><b>Tools: JavaScript, HTML/CSS, Photoshop</em></b>',
-            "img":'guardianships.jpg',
-            "filterlist":"Interactives"
-        },
-        {
-            id:'vr',
-            link:'http://www.poynter.org/news/mediawire/372330/virtual-reality-news-becoming-a-reality-in-many-newsrooms/',
-            title:'Virtual reality news is becoming a reality in many newsrooms',
-            source: 'Poynter',
-            category:'words',
-            desc:'The story is a behind the scenes account of building virtual reality teams in newsrooms.',
-            img:'vr.png',
-            filterlist:'Writing'
-        },
+    // {
+    //         "id":'kyc',
+    //         "link":'http://apps.mypalmbeachpost.com/kyc/',
+    //         "title":'Know your candidates',
+    //         "source":'The Palm Beach Post',
+    //         "category":'code + design',
+    //         "img": 'kyc.png',
+    //         "desc":'Developed and designed Tarbell-based site for Palm Beach County\'s 2016 municipal elections. <em><b>Tools: Python, Flask, HTML/CSS/JavaScript.</em></b>',
+    //         "filterlist":"Dashboards/Data"
+    //     },
+    // {
+    //         id: 'baseball',
+    //         link: 'http://www.mypalmbeachpost.com/mark-foley-helps-save-astros-nationals-spring-training-baseball-in-west-palm-beach/',
+    //         title: 'Spring training hardball: How a disgraced politician helped save the game',
+    //         source: 'The Palm Beach Post',
+    //         category: 'design',
+    //         desc: "For a story about the behind the scenes of a spring training stadium in Palm Beach County, I made baseball cards for the characters involved.<em><b>Tools: Photoshop, JavaScript, HTML/CSS</em></b>",
+    //         img: 'baseball.png',
+    //         filterlist:'Interactives'
+    //     },
+        // {
+        //     "id":'sports-college',
+        //     "link":'http://www.mypalmbeachpost.com/sports/football-recruiting',
+        //     "title":'Recruiting Central',
+        //     "source":'The Palm Beach Post',
+        //     "category":'code + design',
+        //     "desc":'Built a front-end layout integrated with Google Spreadsheets within a day to enable our Sports team to make quick and easy live updates to recruitment data for college football teams. With CSS ➡ Table on desktop / cards on mobile. <em><b>Tools: JavaScript, Underscore.js, Tabletop.js, HTML/CSS</em></b>',
+        //     "img":'football.png',
+        //     "filterlist":"Interactives"
+        // },
+        // {
+        //     "id":'guardianships',
+        //     "link":'http://www.mypalmbeachpost.com/guardianships-colin-savitt/',
+        //     "title":'Guardianships - A Broken Trust',
+        //     "source":'The Palm Beach Post',
+        //     "category":'code + design',
+        //     "desc":'Led the design and development for the investigative package within the confines of the CMS. Used <a href = "https://gurmanbh.github.io/notable/" target = "_blank">notable</a> (a custom built tool) to add hover elements for key players in the story. <em><b>Tools: JavaScript, HTML/CSS, Photoshop</em></b>',
+        //     "img":'guardianships.jpg',
+        //     "filterlist":"Interactives"
+        // },
+        // {
+        //     id:'vr',
+        //     link:'http://www.poynter.org/news/mediawire/372330/virtual-reality-news-becoming-a-reality-in-many-newsrooms/',
+        //     title:'Virtual reality news is becoming a reality in many newsrooms',
+        //     source: 'Poynter',
+        //     category:'words',
+        //     desc:'The story is a behind the scenes account of building virtual reality teams in newsrooms.',
+        //     img:'vr.png',
+        //     filterlist:'Writing'
+        // },
         {
             id:'structuredjournalism',
             link:'http://www.poynter.org/news/mediawire/361585/how-newsrooms-are-using-machine-learning-to-make-journalists-lives-easier/',
@@ -363,153 +377,69 @@
             filterlist:"Interactives/Data"
         },
 
-        {
-            id: 'snapchat',
-            link: 'https://gurmanbh.github.io/snapchat-web',
-            title: 'The Making of Snapchat',
-            source: 'Classwork - Columbia Journalism School',
-            category: 'words + code + design',
-            desc: "Presented in a combination of snaps and text, this story uses Snapchat's aesthetics and interface to traces the journey of the brand towards a revenue based model.<em><b>Tools: HTML/CSS, JavaScript, PhotoShop</em></b>",
-            img: 'snapchat-inside.png',
-            filterlist:"Interactives"
-        },
-        {
-            "id":'interviewing',
-            "link":'https://www.facebook.com/Poynter/videos/vb.5752246165/10153446685391166/?type=2&theater',
-            "title":'5 basics of interviewing and note-taking',
-            "source":'Poynter',
-            "category":'animation',
-            "desc":'During my fellowship at Poynter, I made a quick video in After Effects for a Roy Peter Clark piece on the basics of interviewing and note-taking.',
-            "img":'interviewing.png',
-            "filterlist":"Video"
-        },
-        {
-            "id":'kathputli',
-            "link":'https://www.youtube.com/watch?v=H1UBUmHpytU',
-            "title":'Lost in Transition: Mapping the displacement in Kathputli Colony',
-            "source":'Documentary Project: Lady Shri Ram College for Women',
-            "category":'video',
-            "desc":'In the heart of the city of New Delhi, India lies an artists’ colony inhabited by puppeteers, singers, percussion artists and sculptors. This short video documentary sketches the story of the residents of Kathputli colony as they grapple with the proposed demolition of their 44 year-old settlement.',
-            "img":'kathputli.png',
-            "filterlist":"Video"
-        }
+        // {
+        //     id: 'snapchat',
+        //     link: 'https://gurmanbh.github.io/snapchat-web',
+        //     title: 'The Making of Snapchat',
+        //     source: 'Classwork - Columbia Journalism School',
+        //     category: 'words + code + design',
+        //     desc: "Presented in a combination of snaps and text, this story uses Snapchat's aesthetics and interface to traces the journey of the brand towards a revenue based model.<em><b>Tools: HTML/CSS, JavaScript, PhotoShop</em></b>",
+        //     img: 'snapchat-inside.png',
+        //     filterlist:"Interactives"
+        // },
+        // {
+        //     "id":'interviewing',
+        //     "link":'https://www.facebook.com/Poynter/videos/vb.5752246165/10153446685391166/?type=2&theater',
+        //     "title":'5 basics of interviewing and note-taking',
+        //     "source":'Poynter',
+        //     "category":'animation',
+        //     "desc":'During my fellowship at Poynter, I made a quick video in After Effects for a Roy Peter Clark piece on the basics of interviewing and note-taking.',
+        //     "img":'interviewing.png',
+        //     "filterlist":"Video"
+        // },
+        // {
+        //     "id":'kathputli',
+        //     "link":'https://www.youtube.com/watch?v=H1UBUmHpytU',
+        //     "title":'Lost in Transition: Mapping the displacement in Kathputli Colony',
+        //     "source":'Documentary Project: Lady Shri Ram College for Women',
+        //     "category":'video',
+        //     "desc":'In the heart of the city of New Delhi, India lies an artists’ colony inhabited by puppeteers, singers, percussion artists and sculptors. This short video documentary sketches the story of the residents of Kathputli colony as they grapple with the proposed demolition of their 44 year-old settlement.',
+        //     "img":'kathputli.png',
+        //     "filterlist":"Video"
+        // }
 
     ]
 
-   
+    var links = d3.select('.stories')
+        .selectAll('.story')
+        .data(storydata)
+        .enter()
+        .append('a')
+        .attr('class','story')
+        .attr('href',function(d){
+            return d.link
+        })
+        
+            
+    links.append('div')
+        .attr('class','image')
+        .style('background-image',function(d){
+            return "url('img/story-pics/"+d.img+"')"
+        })
 
-    var template_Html = $('#storytemplate').html();
-    var template_TF = _.template(template_Html);
+    var con = links.append('div')
+        .attr('class','container')
 
-    var buffer = 90;
+    con.append('p')
+        .attr('class','story-title')
+        .text(function(d){
+            return d.title
+         })
 
-    //scroll to partcular section on the page
-    $('.menu .options').on('click', function(){
-            if ($('.menu').hasClass('show')){
-            buffer = 10;  
-            $('.menu').removeClass('show');
-            }
-    	var space = $(this).attr('data-which');
-        var l= '#'+space;
-        var pos = $(l).offset();
-        pos.top = pos.top - buffer;
-        $('html, body').animate({scrollTop:(pos.top)}, 600);
-    });
-
-    $(window).scroll(function() {
-        var windscroll = $(window).scrollTop();
-        if (windscroll >= 100) {
-            $('#content .segment').each(function(i) {
-                if ($(this).position().top <= windscroll + buffer	) {
-                    $('.desktop .options.active').removeClass('active');
-                    $('.desktop .options').eq(i).addClass('active');
-                    $('.mobile .options.active').removeClass('active');
-                    $('.mobile .options').eq(i).addClass('active');
-                }
-            });
-
-        } else {
-            $('.desktop .options.active').removeClass('active');
-            $('.desktop .options:first').addClass('active');
-            $('.mobile .options.active').removeClass('active');
-            $('.mobile .options:first').addClass('active');
-        }
-
-    }).scroll();
-
-    $('#hamburger').on('click', function(){
-        if ($('#mobilemenu').hasClass('show')){
-            $('#mobilemenu').removeClass('show');    
-        } else
-        {$('#mobilemenu').addClass('show')};
-    });
-
-    storydata.forEach(function(e){
-        if (!e.filterlist){
-            e.filterlist = ["Other"]
-        } else {
-            e.filterlist = e.filterlist.split("/");
-        }
-    })
-
-    $('#filterset').append('<li data-which="'+'All'+'" class ="category">'+'All'+'</li>')
-
-    filters.forEach(function(e){
-        $('#filterset').append('<li data-which="'+e+'" class ="category">'+e+'</li>')
-    })
-
-    $('li').on('click',function(){
-        $('#work-para').html('')
-        $('li').removeClass('active');
-        $(this).addClass('active');
-        var check = $(this).attr('data-which')
-        bake(check)
-    })
-
-    function bake(check){
-        if (check=='All'){
-            storydata.forEach(function(e){
-                $('#work-para').append(template_TF(e))
-            })
-        } else {
-            storydata.forEach(function(e){
-                if (_.contains(e.filterlist,check)){
-                    $('#work-para').append(template_TF(e))
-                }
-            });
-        }
-
-        hovercode()
-    }
-
-    bake('Highlights');
-    $('li[data-which="Highlights"]').addClass('active');
-    hovercode()
-
-    // hover stuff
-function hovercode(){
-
-    $('.story-title h3').on('mouseover',function(){
-        var thing =  '#'+$(this).attr('data-which');
-        $(thing).addClass('image-active');
-    });
-
-    $('.story-title h3').on('mouseout',function(){
-        var thing =  '#'+$(this).attr('data-which');
-        $(thing).removeClass('image-active');
-    });
-
-    $('.story-image-block').on('mouseover',function(){
-        var thing =  '.story-title h3[data-which="'+$(this).attr('id')+'"]';
-        $(thing).addClass('title-active');
-    });
-
-    $('.story-image-block').on('mouseout',function(){
-        var thing =  '.story-title h3[data-which="'+$(this).attr('id')+'"]';
-        $(thing).removeClass('title-active');
-    });
-
-}
-     
+    con.append('p')
+        .attr('class','date-line')
+        .text(function(d){
+            return d.source
+        })
 
 }).call(this)
